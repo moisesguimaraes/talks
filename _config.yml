@@ -6,16 +6,20 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/expotec-wolfcrypt-py-press" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+title: wolfcrypt-py @ EXPOTEC 2016
+
+baseurl: "/expotec-wolfcrypt-py-press"
+url: "https://moisesguimaraes.github.io"
+
+email: moises@wolfssl.com
+
+description: > # Esta apresentação contém conceitos básicos de criptografia clássica e moderna,
+  e uma introdução à biblioteca wolfCrypt, engine de criptografia por trás da biblioteca wolfSSL
+  responsável pela segurança de mais de 1 bilhão de aplicações e dispositivos. Utilizando exemplos
+  na linguagem python com a API wolfcrypt-py, tentamos desmistificar um pouco da criptografia para
+  público geral, assim como divulgar a ferramenta para desenvolvedores, aumentando o seu "arsenal
+  digital".
 
 # Build settings
 markdown: kramdown
+
