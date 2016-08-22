@@ -1,17 +1,27 @@
 ---
 layout: slide
-title: Jekyll&#58; Make presentation page with reveal.js
-description: A presentation slide for how to use reveal.js in Jekyll
-theme: black
+
+title: wolfcrypt-py @ EXPOTEC 2016
+description: > # Esta apresentação contém conceitos básicos de criptografia clássica e moderna,
+  e uma introdução à biblioteca wolfCrypt, engine de criptografia por trás da biblioteca wolfSSL
+  responsável pela segurança de mais de 1 bilhão de aplicações e dispositivos. Utilizando exemplos
+  na linguagem python com a API wolfcrypt-py, tentamos desmistificar um pouco da criptografia para
+  público geral, assim como divulgar a ferramenta para desenvolvedores, aumentando o seu "arsenal
+  digital".
+
+theme: sky
 transition: slide
 ---
 
 <section data-markdown>
-# How to use reveal.js in Jekyll
+![logo]({{ "/images/logo.gif" | prepend: site.baseurl }})
 
-by [Luu Gia Thuy](http://luugiathuy.com) / [@luugiathuy](http://twitter.com/luugiathuy)
+# wolfcrypt-py
+### embalando segredos com Python
 
-April 6, 2015
+[Moisés Guimarães de Medeiros](https://github.com/moisesguimaraes)
+
+27 de Agosto de 2016
 </section>
 
 <section data-markdown>
