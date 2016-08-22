@@ -76,6 +76,7 @@
         {% else %}
           transition: 'slide', // none/fade/slide/convex/concave/zoom
         {% endif %}
+
         // Optional reveal.js plugins
         dependencies: [
           { src: '{{ "/reveal.js/lib/js/classList.js" | prepend: site.baseurl }}', condition: function() { return !document.body.classList; } },
@@ -86,6 +87,7 @@
           { src: '{{ "/reveal.js/plugin/notes/notes.js" | prepend: site.baseurl }}', async: true }
         ]
       });
+
     </script>
     
   </body>
