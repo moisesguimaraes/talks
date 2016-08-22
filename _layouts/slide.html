@@ -29,9 +29,9 @@
     {%if page.theme %}
       <link rel="stylesheet" href="{{ "/reveal.js/css/theme/" | prepend: site.baseurl | append: page.theme | append: '.css' }}" id="theme"/>
     {% else %}
-      <link rel="stylesheet" href="{{ "/reveal.js/css/theme/black.css" | prepend: site.baseurl }}" id="theme"/>
+      <link rel="stylesheet" href="{{ "/css/theme.css" | prepend: site.baseurl }}" id="theme"/>
     {% endif %}
-    <link rel="stylesheet" href="{{ "/css/theme.css" | prepend: site.baseurl }}"/>
+    
 
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="{{ "/reveal.js/lib/css/zenburn.css" | prepend: site.baseurl }}"/>
