@@ -14,7 +14,7 @@ transition: slide
 ---
 
 <section data-markdown>
-![logo]({{ "/images/logo.gif" | prepend: site.baseurl }})
+<img src={{ "/images/logo.png" | prepend: site.baseurl }} width=250px>
 
 # wolfcrypt-py
 ### embalando segredos com Python
