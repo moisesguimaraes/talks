@@ -17,13 +17,29 @@ layout: slide
   #### Quanto vale um segredo?
 </script></section>
 
-<section data-markdown data-background-image="{{ "/images/citala.png" | prepend: site.baseurl }}"><script type="text/template">
+<section>
+<section data-markdown data-background-image="{{ "/images/ancient.png" | prepend: site.baseurl }}"><script type="text/template">
   #### Como era antigamente?
 </script></section>
+<section data-markdown data-background-image="{{ "/images/citala.png" | prepend: site.baseurl }}"><script type="text/template">
+  #### transposição
+</script></section>
+<section data-markdown data-background-image="{{ "/images/caesar.jpg" | prepend: site.baseurl }}"><script type="text/template">
+  #### substituição
+</script></section>
+</section>
 
+<section>
 <section data-markdown data-background-image="{{ "/images/enigma.jpg" | prepend: site.baseurl }}"><script type="text/template">
   #### Como evoluiu?
 </script></section>
+<section data-markdown data-background-image="{{ "/images/enigma2.jpg" | prepend: site.baseurl }}"><script type="text/template">
+  #### enigma
+</script></section>
+<section data-markdown data-background-image="{{ "/images/bombe.jpg" | prepend: site.baseurl }}"><script type="text/template">
+  #### bombe
+</script></section>
+</section>
 
 <section data-markdown data-background-image="{{ "/images/keyboard.jpg" | prepend: site.baseurl }}"><script type="text/template">
   #### Onde estamos?
@@ -36,25 +52,25 @@ layout: slide
 </script></section>
 
 <section data-markdown><script type="text/template">
-  ## Confidencialidade
+  # Confidencialidade
 
-  <img class="plain" width=50% src={{ "/images/confidencialidade.png" | prepend: site.baseurl }}>
+  <img class="plain" width=75% src={{ "/images/confidencialidade.png" | prepend: site.baseurl }}>
 
   protege contra acesso não autorizado
 </script></section>
 
 <section data-markdown><script type="text/template">
-  ## Integridade
+  # Integridade
 
-  <img class="plain" width=75% src={{ "/images/integridade.png" | prepend: site.baseurl }}>
+  <img class="plain" width=95% src={{ "/images/integridade.png" | prepend: site.baseurl }}>
 
   garante que a mensagem não foi alterada
 </script></section>
 
 <section data-markdown><script type="text/template">
-  ## Autenticidade
+  # Autenticidade
 
-  <img class="plain" width=40% src={{ "/images/autenticidade.png" | prepend: site.baseurl }}>
+  <img class="plain" width=50% src={{ "/images/autenticidade.png" | prepend: site.baseurl }}>
 
   verifica a identidade do remetente
 </script></section>
@@ -72,16 +88,7 @@ layout: slide
 </script></section>
 
 <section>
-<h2>Instalação</h2>
-<h3>Mac OSX</h3>
-
-<pre><code class="shell" data-trim data-noescape>
-$ brew install wolfssl
-$ 
-$ sudo -H pip install wolfcrypt
-</code></pre>
-
-OU
+<h1>Instalação</h1>
 
 <pre><code class="shell" data-trim data-noescape>
 $ git clone https://github.com/wolfssl/wolfssl.git
@@ -96,52 +103,10 @@ $ sudo -H pip install wolfcrypt
 </code></pre>
 </section>
 
-<section>
-<h2>Instalação</h2>
-<h3>Ubuntu</h3>
-
-<pre><code class="shell" data-trim data-noescape>
-$ sudo apt-get update
-$ sudo apt-get install -y git autoconf libtool
-$ 
-$ git clone https://github.com/wolfssl/wolfssl.git
-$ cd wolfssl/
-$ ./autogen.sh
-$ ./configure --enable-sha512
-$ make
-$ sudo make install
-$ 
-$ sudo ldconfig
-$ 
-$ sudo apt-get install -y python-dev python-pip libffi-dev
-$ sudo -H pip install wolfcrypt
-</code></pre>
-</section>
-
-<section>
-<h2>Instalação</h2>
-<h3>CentOS</h3>
-
-<pre><code class="shell" data-trim data-noescape>
-$ sudo rpm -ivh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-6.noarch.rpm
-$ sudo yum update
-$ sudo yum install -y git autoconf libtool
-$ 
-$ git clone git@github.com:wolfssl/wolfssl.git
-$ cd wolfssl
-$ ./autogen.sh
-$ ./configure --enable-sha512
-$ make
-$ sudo make install
-$ 
-$ echo /usr/local/lib > wolfssl.conf
-$ sudo mv wolfssl.conf /etc/ld.so.conf
-$ sudo ldconfig
-$ 
-$ sudo yum install -y python-devel python-pip libffi-devel
-$ sudo -H pip install wolfcrypt
-</code></pre>
-</section>
+<section data-markdown><script type="text/template">
+  ## Criptografia Simétrica
+  <img class="plain" width=90% src={{ "/images/simetrica.png" | prepend: site.baseurl }}>
+</script></section>
 
 <section>
 <h2>Exemplo de Chave Simétrica</h2>
@@ -157,6 +122,11 @@ b'\x95\x94\x92W_B\x81S,\xcc\x9dFw\xa23\xcb'
 b'now is the time '
 </code></pre>
 </section>
+
+<section data-markdown><script type="text/template">
+  ## Criptografia Assimétrica
+  <img class="plain" width=90% src={{ "/images/assimetrica.png" | prepend: site.baseurl }}>
+</script></section>
 
 <section>
 <h2>Exemplo de Chave Assimétrtica</h2>
@@ -212,6 +182,11 @@ b'~\xc4\xe65\x15\xb17\x7fX\xaf,\xc2lw\xbd\x8f\t\x9d\xbf\xac\xdez\x90\xb4\x9f\x1a
 b'Everyone gets Friday off.'
 </code></pre>
 </section>
+
+<section data-markdown><script type="text/template">
+  ## Funções de Hash
+  <img class="plain" width=90% src={{ "/images/hash.png" | prepend: site.baseurl }}>
+</script></section>
 
 <section>
 <h2>Exemplo de Hash</h2>
