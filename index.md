@@ -115,9 +115,11 @@ $ sudo -H pip install wolfcrypt
 >>> from wolfcrypt.ciphers import Aes, MODE_CBC
 >>> 
 >>> cipher = Aes(b'0123456789abcdef', MODE_CBC, b'1234567890abcdef')
+>>> 
 >>> ciphertext = cipher.encrypt('now is the time ')
 >>> ciphertext
 b'\x95\x94\x92W_B\x81S,\xcc\x9dFw\xa23\xcb'
+>>> 
 >>> cipher.decrypt(ciphertext)
 b'now is the time '
 </code></pre>
@@ -188,6 +190,49 @@ b'Everyone gets Friday off.'
   <img class="plain" width=90% src={{ "/images/hash.png" | prepend: site.baseurl }}>
 </script></section>
 
+<section data-markdown><script type="text/template">
+  ## Propriedades de um bom Hash
+  - Fácil de calcular
+  - Inviável de forjar uma mensagem com um determinado resumo
+  - Inviável de modificar a mensagem sem modificar o resumo
+  - Inviável de encontrar duas mensagens com o mesmo resumo
+</script></section>
+
+<section data-markdown><script type="text/template">
+  ## Funções de Hash
+
+  <table>
+  <tr>
+    <th>Hash</th>
+    <th>Tamanho</th>
+    <th>Exemplo</th>
+  </tr>
+
+  <tr>
+    <td>SHA-1</td>
+    <td>160 bits</td>
+    <td><code>a33d8d465abb7cc30958b47095528619<br/>
+              83c28f02</code></td>
+  </tr>
+
+  <tr>
+    <td>SHA-256</td>
+    <td>256 bits</td>
+    <td><code>2157db6d182dfce96fe8190e0117ea85<br/>
+              38392658fdd9ae2d48268d4277d5dceb</code></td>
+  </tr>
+
+  <tr>
+    <td>SHA-512</td>
+    <td>512 bits</td>
+    <td><code>58c489dc1286f484b17473cbd519346e<br/>
+              5035640c27326ec7098e9b91d4c61e27<br/>
+              26eaa5b76eeb921c6f0796d3a281f3b7<br/>
+              dbbd3fa7e9c7e3f03d964795e2ba2f43</code></td>
+  </tr>
+  </table>
+</script></section>
+
 <section>
 <h2>Exemplo de Hash</h2>
 
@@ -197,12 +242,19 @@ b'Everyone gets Friday off.'
 >>> s = Sha256()
 >>> h.update("wolf")
 >>> h.update("crypt")
+>>> 
 >>> s.digest()
 b'\x96\xe0.{\x1c\xbc\xd6\xf1\x04\xfe\x1f\xdbFR\x02zU\x05\xb6\x86R\xb7\x00\x95\xc61\x8f\x9d\xce\r\x18D'
+>>> 
 >>> s.hexdigest()
 b'96e02e7b1cbcd6f104fe1fdb4652027a5505b68652b70095c6318f9dce0d1844'
 </code></pre>
 </section>
+
+<section data-markdown><script type="text/template">
+  ## Funções de HMAC
+  <img class="plain" width=90% src={{ "/images/hmac.png" | prepend: site.baseurl }}>
+</script></section>
 
 <section>
 <h2>Exemplo de HMAC</h2>
@@ -213,8 +265,10 @@ b'96e02e7b1cbcd6f104fe1fdb4652027a5505b68652b70095c6318f9dce0d1844'
 >>> h = HmacSha256('secret')
 >>> h.update("wolf")
 >>> h.update("crypt")
+>>> 
 >>> h.digest()
 b'\x18\xbf*\t9\xa2o\xdf\\\xc8\xe0\xc2U\x94,\x8dY\x02;\x1c<Q\xdf\x8d\xdb\x863\xfb\xc1f#o'
+>>> 
 >>> h.hexdigest()
 b'18bf2a0939a26fdf5cc8e0c255942c8d59023b1c3c51df8ddb8633fbc166236f'
 </code></pre>
@@ -227,9 +281,11 @@ b'18bf2a0939a26fdf5cc8e0c255942c8d59023b1c3c51df8ddb8633fbc166236f'
 >>> from wolfcrypt.random import Random
 >>> 
 >>> r = Random()
+>>> 
 >>> b = r.byte()
 >>> b
 b'\x8c'
+>>> 
 >>> b16 = r.bytes(16)
 >>> b16
 b']\x93nk\x95\xbc@\xffX\xab\xdcB\xda\x11\xf7\x03'
