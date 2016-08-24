@@ -13,33 +13,47 @@ layout: slide
 27 de Agosto de 2016
 </script></section>
 
+<section data-markdown><script type="text/template">
+{% include logo.html %}
+
+# wolfSSL Inc.
+
+Fundada em 2009
+
+~ 20 funcionários
+
+Seattle | Bozeman | Portland | Sacramento | Tokyo | João Pessoa
+
+</script></section>
+
+
 <section data-markdown data-background-image="{{ "/images/segredo.jpg" | prepend: site.baseurl }}"><script type="text/template">
   #### Quanto vale um segredo?
 </script></section>
 
-<section>
 <section data-markdown data-background-image="{{ "/images/ancient.png" | prepend: site.baseurl }}"><script type="text/template">
   #### Como era antigamente?
 </script></section>
+
 <section data-markdown data-background-image="{{ "/images/citala.png" | prepend: site.baseurl }}"><script type="text/template">
   #### transposição
 </script></section>
+
 <section data-markdown data-background-image="{{ "/images/caesar.jpg" | prepend: site.baseurl }}"><script type="text/template">
   #### substituição
 </script></section>
-</section>
 
-<section>
 <section data-markdown data-background-image="{{ "/images/enigma.jpg" | prepend: site.baseurl }}"><script type="text/template">
   #### Como evoluiu?
 </script></section>
+
 <section data-markdown data-background-image="{{ "/images/enigma2.jpg" | prepend: site.baseurl }}"><script type="text/template">
   #### enigma
 </script></section>
+
 <section data-markdown data-background-image="{{ "/images/bombe.jpg" | prepend: site.baseurl }}"><script type="text/template">
   #### bombe
 </script></section>
-</section>
 
 <section data-markdown data-background-image="{{ "/images/keyboard.jpg" | prepend: site.baseurl }}"><script type="text/template">
   #### Onde estamos?
@@ -48,7 +62,7 @@ layout: slide
 <section data-markdown><script type="text/template">
   <img class="plain" width=25% src={{ "/images/whats.png" | prepend: site.baseurl }}>
 
-  As <spam class="fragment highlight-current-blue">mensagens que você enviar</spam> e as <spam class="fragment highlight-current-blue">ligações que você fizer</spam> nesta conversa estão <spam class="fragment highlight-current-blue">protegidas</spam> com <spam class="fragment highlight-current-blue">criptografia</spam> de <spam class="fragment highlight-current-blue">ponta-a-ponta</spam>.
+  As mensagens que você enviar e as ligações que você fizer nesta conversa estão <spam class="fragment highlight-current-blue">protegidas com criptografia de ponta-a-ponta</spam>.
 </script></section>
 
 <section data-markdown><script type="text/template">
@@ -76,6 +90,12 @@ layout: slide
 </script></section>
 
 <section data-markdown><script type="text/template">
+  <img class="plain" width=45% src={{ "/images/algorithm.png" | prepend: site.baseurl }}>
+
+  # Algoritmos de Criptografia
+</script></section>
+
+<section data-markdown><script type="text/template">
   ### wolfcrypt: wolfSSL Crypto Engine
 
   - Escrita em C, com foco em leveza e portabilidade.
@@ -87,25 +107,35 @@ layout: slide
   - Também disponível para desktop e cloud.
 </script></section>
 
-<section>
-<h1>Instalação</h1>
-
-<pre><code class="shell" data-trim data-noescape>
-$ git clone https://github.com/wolfssl/wolfssl.git
-$ 
-$ cd wolfssl/
-$ ./autogen.sh
-$ ./configure --enable-sha512
-$ make
-$ sudo make install
-$ 
-$ sudo -H pip install wolfcrypt
-</code></pre>
-</section>
+<section data-markdown><script type="text/template">
+  # Chave Simétrica
+  <img class="plain" width=90% src={{ "/images/simetrica.png" | prepend: site.baseurl }}>
+</script></section>
 
 <section data-markdown><script type="text/template">
-  ## Criptografia Simétrica
-  <img class="plain" width=90% src={{ "/images/simetrica.png" | prepend: site.baseurl }}>
+  ## Modos de cifragem em bloco: ECB
+  
+  <img class="plain" width=90% src={{ "/images/ecb.svg" | prepend: site.baseurl }}>
+</script></section>
+
+<section data-markdown><script type="text/template">
+  ## Modos de cifragem em bloco: ECB
+  
+  <img class="plain" src={{ "/images/tux.jpg" | prepend: site.baseurl }}>
+  <img class="plain" src={{ "/images/tux-ecb.jpg" | prepend: site.baseurl }}>
+  <img class="plain" src={{ "/images/tux-secure.jpg" | prepend: site.baseurl }}>
+</script></section>
+
+<section data-markdown><script type="text/template">
+  ## Modos de cifragem em bloco: CBC
+  
+  <img class="plain" width=90% src={{ "/images/cbc.svg" | prepend: site.baseurl }}>
+</script></section>
+
+<section data-markdown><script type="text/template">
+  ## Modos de cifragem em bloco: CRT
+  
+  <img class="plain" width=90% src={{ "/images/crt.svg" | prepend: site.baseurl }}>
 </script></section>
 
 <section>
@@ -126,7 +156,7 @@ b'now is the time '
 </section>
 
 <section data-markdown><script type="text/template">
-  ## Criptografia Assimétrica
+  # Chave Assimétrica
   <img class="plain" width=90% src={{ "/images/assimetrica.png" | prepend: site.baseurl }}>
 </script></section>
 
@@ -186,7 +216,7 @@ b'Everyone gets Friday off.'
 </section>
 
 <section data-markdown><script type="text/template">
-  ## Funções de Hash
+  # Funções de Hash
   <img class="plain" width=90% src={{ "/images/hash.png" | prepend: site.baseurl }}>
 </script></section>
 
@@ -252,7 +282,7 @@ b'96e02e7b1cbcd6f104fe1fdb4652027a5505b68652b70095c6318f9dce0d1844'
 </section>
 
 <section data-markdown><script type="text/template">
-  ## Funções de HMAC
+  # HMAC
   <img class="plain" width=90% src={{ "/images/hmac.png" | prepend: site.baseurl }}>
 </script></section>
 
@@ -274,6 +304,13 @@ b'18bf2a0939a26fdf5cc8e0c255942c8d59023b1c3c51df8ddb8633fbc166236f'
 </code></pre>
 </section>
 
+<section data-markdown><script type="text/template">
+  <img class="plain" width=25% src={{ "/images/dice.png" | prepend: site.baseurl }}>
+
+  # Números Aleatórios
+
+</script></section>
+
 <section>
 <h2>Geração de Números Aleatórios</h2>
 
@@ -291,6 +328,33 @@ b'\x8c'
 b']\x93nk\x95\xbc@\xffX\xab\xdcB\xda\x11\xf7\x03'
 </code></pre>
 </section>
+
+<section data-markdown><script type="text/template">
+
+<img class="plain" width=20% src={{ "/images/gear.png" | prepend: site.baseurl }}>
+
+# Instalação
+
+<pre><code class="shell" data-trim data-noescape>
+$ git clone https://github.com/wolfssl/wolfssl.git
+$ 
+$ cd wolfssl/
+$ ./autogen.sh
+$ ./configure --enable-sha512
+$ make
+$ sudo make install
+$ 
+$ sudo -H pip install wolfcrypt
+</code></pre>
+</script></section>
+
+<section data-markdown><script type="text/template">
+  <img class="plain" width=15% src={{ "/images/book.png" | prepend: site.baseurl }}>
+
+  # Documentação completa
+
+  [wolfssl.github.io/wolfcrypt-py](https://wolfssl.github.io/wolfcrypt-py/)
+</script></section>
 
 <section data-markdown><script type="text/template">
 
