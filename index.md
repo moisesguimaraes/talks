@@ -26,6 +26,18 @@ Seattle | Bozeman | Portland | Sacramento | Tokyo | João Pessoa
 
 </script></section>
 
+<section data-markdown><script type="text/template">
+  # wolfcrypt
+  ## wolfSSL Crypto Engine
+
+  - Escrita em C, com foco em leveza e portabilidade.
+
+  - Reconhecida pelo seu tamanho, velocidade e funcionalidades.
+
+  - Amplamente utilizada no mercado de IoT.
+
+  - Também disponível para desktop e cloud.
+</script></section>
 
 <section data-markdown data-background-image="{{ "/images/segredo.jpg" | prepend: site.baseurl }}"><script type="text/template">
   #### Quanto vale um segredo?
@@ -93,18 +105,6 @@ Seattle | Bozeman | Portland | Sacramento | Tokyo | João Pessoa
   <img class="plain" width=45% src={{ "/images/algorithm.png" | prepend: site.baseurl }}>
 
   # Algoritmos de Criptografia
-</script></section>
-
-<section data-markdown><script type="text/template">
-  ### wolfcrypt: wolfSSL Crypto Engine
-
-  - Escrita em C, com foco em leveza e portabilidade.
-
-  - Reconhecida pelo seu tamanho, velocidade e funcionalidades.
-
-  - Amplamente utilizada no mercado de IoT.
-
-  - Também disponível para desktop e cloud.
 </script></section>
 
 <section data-markdown><script type="text/template">
