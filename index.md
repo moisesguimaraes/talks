@@ -161,7 +161,7 @@ b'now is the time '
 </script></section>
 
 <section>
-<h2>Exemplo de Chave Assimétrtica</h2>
+<h2>Exemplo de Chave Assimétrica</h2>
 
 <pre><code class="python" data-trim data-noescape>
 >>> from wolfcrypt.ciphers import RsaPrivate, RsaPublic
