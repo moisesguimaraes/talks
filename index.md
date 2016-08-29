@@ -74,7 +74,7 @@ Seattle | Bozeman | Portland | Sacramento | Tokyo | João Pessoa
 <section data-markdown><script type="text/template">
   <img class="plain" width=25% src={{ "/images/whats.png" | prepend: site.baseurl }}>
 
-  As mensagens que você enviar e as ligações que você fizer nesta conversa estão <spam class="fragment highlight-current-blue">protegidas com criptografia de ponta-a-ponta</spam>.
+  As mensagens que você enviar e as ligações que você fizer nesta conversa estão protegidas com criptografia de ponta-a-ponta.
 </script></section>
 
 <section data-markdown><script type="text/template">
