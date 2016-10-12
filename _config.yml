@@ -6,9 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: wolfcrypt-py @ EXPOTEC 2016
+title: wolfcrypt-py @ Python Brasil [12]
 
-baseurl: "/expotec-wolfcrypt-py-press"
+baseurl: "/pybr12-wolfcrypt-py"
 url: "https://moisesguimaraes.github.io"
 
 email: moises@wolfssl.com
