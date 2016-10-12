@@ -3,14 +3,14 @@ layout: slide
 ---
 
 <section data-markdown><script type="text/template">
-{% include logo.html %}
+{% include pybr.html %}
 
 # wolfcrypt-py
 ### embalando segredos com Python
 
 [Moisés Guimarães de Medeiros](https://github.com/moisesguimaraes)
 
-27 de Agosto de 2016
+13 de Outubro de 2016
 </script></section>
 
 <section data-markdown><script type="text/template">
