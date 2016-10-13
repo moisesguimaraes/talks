@@ -14,6 +14,34 @@ layout: slide
 </script></section>
 
 <section data-markdown><script type="text/template">
+
+{% include avatar.html %}
+
+## Moisés Guimarães de Medeiros
+
+- Especialista em Segurança da Informação
+
+- Tecnólogo em Sistemas para Internet
+
+- Músico, jogador e atleta nas horas vagas
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+
+{% include avatar.html %}
+
+## Moisés Guimarães de Medeiros
+
+- Engenheiro de Software @ wolfSSL[2013:]
+
+- Professor e Coordenador @ IFPB[2013:]
+
+- Engenheiro de Software @ PhoebusTecnologia[2006:2013]
+
+</script></section>
+
+<section data-markdown><script type="text/template">
 {% include logo.html %}
 
 # wolfSSL Inc.
@@ -37,6 +65,25 @@ Seattle | Bozeman | Portland | Sacramento | Tokyo | João Pessoa
   - Amplamente utilizada no mercado de IoT.
 
   - Também disponível para desktop e cloud.
+</script></section>
+
+<section data-markdown><script type="text/template">
+
+<img class="plain" width=20% src={{ "/images/gear.png" | prepend: site.baseurl }}>
+
+# Instalação
+
+<pre><code class="shell" data-trim data-noescape>
+$ git clone https://github.com/wolfssl/wolfssl.git
+$ 
+$ cd wolfssl/
+$ ./autogen.sh
+$ ./configure --enable-sha512
+$ make
+$ sudo make install
+$ 
+$ sudo -H pip install wolfcrypt
+</code></pre>
 </script></section>
 
 <section data-markdown data-background-image="{{ "/images/segredo.jpg" | prepend: site.baseurl }}"><script type="text/template">
@@ -328,25 +375,6 @@ b'\x8c'
 b']\x93nk\x95\xbc@\xffX\xab\xdcB\xda\x11\xf7\x03'
 </code></pre>
 </section>
-
-<section data-markdown><script type="text/template">
-
-<img class="plain" width=20% src={{ "/images/gear.png" | prepend: site.baseurl }}>
-
-# Instalação
-
-<pre><code class="shell" data-trim data-noescape>
-$ git clone https://github.com/wolfssl/wolfssl.git
-$ 
-$ cd wolfssl/
-$ ./autogen.sh
-$ ./configure --enable-sha512
-$ make
-$ sudo make install
-$ 
-$ sudo -H pip install wolfcrypt
-</code></pre>
-</script></section>
 
 <section data-markdown><script type="text/template">
   <img class="plain" width=15% src={{ "/images/book.png" | prepend: site.baseurl }}>
