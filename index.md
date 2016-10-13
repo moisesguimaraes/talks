@@ -67,25 +67,6 @@ Seattle | Bozeman | Portland | Sacramento | Tokyo | João Pessoa
   - Também disponível para desktop e cloud.
 </script></section>
 
-<section data-markdown><script type="text/template">
-
-<img class="plain" width=20% src={{ "/images/gear.png" | prepend: site.baseurl }}>
-
-# Instalação
-
-<pre><code class="shell" data-trim data-noescape>
-$ git clone https://github.com/wolfssl/wolfssl.git
-$ 
-$ cd wolfssl/
-$ ./autogen.sh
-$ ./configure --enable-sha512
-$ make
-$ sudo make install
-$ 
-$ sudo -H pip install wolfcrypt
-</code></pre>
-</script></section>
-
 <section data-markdown data-background-image="{{ "/images/segredo.jpg" | prepend: site.baseurl }}"><script type="text/template">
   #### Quanto vale um segredo?
 </script></section>
@@ -146,6 +127,25 @@ $ sudo -H pip install wolfcrypt
   <img class="plain" width=50% src={{ "/images/autenticidade.png" | prepend: site.baseurl }}>
 
   verifica a identidade do remetente
+</script></section>
+
+<section data-markdown><script type="text/template">
+
+<img class="plain" width=20% src={{ "/images/gear.png" | prepend: site.baseurl }}>
+
+# Instalação
+
+<pre><code class="shell" data-trim data-noescape>
+$ git clone https://github.com/wolfssl/wolfssl.git
+$ 
+$ cd wolfssl/
+$ ./autogen.sh
+$ ./configure --enable-sha512
+$ make
+$ sudo make install
+$ 
+$ sudo -H pip install wolfcrypt
+</code></pre>
 </script></section>
 
 <section data-markdown><script type="text/template">
