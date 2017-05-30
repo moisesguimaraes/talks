@@ -3,27 +3,14 @@ layout: slide
 ---
 
 <section data-markdown><script type="text/template">
-{% include pybr.html %}
+{% include pyconcz.html %}
 
 # wolfcrypt-py
-### embalando segredos com Python
+### wrapping secrets with Python
 
 [Moisés Guimarães de Medeiros](https://github.com/moisesguimaraes)
 
-13 de Outubro de 2016
-</script></section>
-
-<section data-markdown><script type="text/template">
-
-{% include avatar.html %}
-
-## Moisés Guimarães de Medeiros
-
-- Especialista em Segurança da Informação
-
-- Tecnólogo em Sistemas para Internet
-
-- Músico, jogador e atleta nas horas vagas
+June 8, 2017
 
 </script></section>
 
@@ -33,11 +20,25 @@ layout: slide
 
 ## Moisés Guimarães de Medeiros
 
-- Engenheiro de Software @ wolfSSL[2013:]
+- Software Engineer @ wolfSSL[2013:]
 
-- Professor e Coordenador @ IFPB[2013:]
+- Professor and Course Coordinator @ IFPB[2013:]
 
-- Engenheiro de Software @ PhoebusTecnologia[2006:2013]
+- Software Engieer @ PhoebusTecnologia[2006:2013]
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+
+{% include avatar.html %}
+
+## Moisés Guimarães de Medeiros
+
+- Information Security Specialist
+
+- Web Development Technologist
+
+- Musician, Gamer and Atlete in the free time
 
 </script></section>
 
@@ -46,11 +47,11 @@ layout: slide
 
 # wolfSSL Inc.
 
-Fundada em 2009
+Founded em 2009
 
-~ 20 funcionários
+~ 20 employees
 
-Seattle | Bozeman | Portland | Sacramento | Tokyo | João Pessoa
+USA | Japan | Brazil | Australia | and growing...
 
 </script></section>
 
@@ -58,13 +59,14 @@ Seattle | Bozeman | Portland | Sacramento | Tokyo | João Pessoa
   # wolfcrypt
   ## wolfSSL Crypto Engine
 
-  - Escrita em C, com foco em leveza e portabilidade.
+  - lightweight C library
 
-  - Reconhecida pelo seu tamanho, velocidade e funcionalidades.
+  - known by its small footprint, speed and functionalities
 
-  - Amplamente utilizada no mercado de IoT.
+  - widely used in the IoT market
 
-  - Também disponível para desktop e cloud.
+  - also available for desktop and the cloud.
+
 </script></section>
 
 <section data-markdown data-background-image="{{ "/images/segredo.jpg" | prepend: site.baseurl }}"><script type="text/template">
@@ -263,20 +265,21 @@ b'Everyone gets Friday off.'
 </section>
 
 <section data-markdown><script type="text/template">
-  # Funções de Hash
+  # Hash functions
   <img class="plain" width=90% src={{ "/images/hash.png" | prepend: site.baseurl }}>
 </script></section>
 
 <section data-markdown><script type="text/template">
-  ## Propriedades de um bom Hash
-  - Fácil de calcular
-  - Inviável de forjar uma mensagem com um determinado resumo
-  - Inviável de modificar a mensagem sem modificar o resumo
-  - Inviável de encontrar duas mensagens com o mesmo resumo
+  ## Properties of a good hash
+  - Easy to calculate
+  - Infeasible to guess the message from its hash
+  - Infeasible to modify the message without modifying its hash
+  - Infeasible to find two different messages with the same hash
+
 </script></section>
 
 <section data-markdown><script type="text/template">
-  ## Funções de Hash
+  ## Hash functions
 
   <table>
   <tr>
@@ -311,7 +314,7 @@ b'Everyone gets Friday off.'
 </script></section>
 
 <section>
-<h2>Exemplo de Hash</h2>
+<h2>Hash example</h2>
 
 <pre><code class="python" data-trim data-noescape>
 >>> from wolfcrypt.hashes import Sha256
@@ -334,7 +337,7 @@ b'96e02e7b1cbcd6f104fe1fdb4652027a5505b68652b70095c6318f9dce0d1844'
 </script></section>
 
 <section>
-<h2>Exemplo de HMAC</h2>
+<h2>HMAC example</h2>
 
 <pre><code class="python" data-trim data-noescape>
 >>> from wolfcrypt.hashes import HmacSha256
@@ -354,12 +357,12 @@ b'18bf2a0939a26fdf5cc8e0c255942c8d59023b1c3c51df8ddb8633fbc166236f'
 <section data-markdown><script type="text/template">
   <img class="plain" width=25% src={{ "/images/dice.png" | prepend: site.baseurl }}>
 
-  # Números Aleatórios
+  # Random Numbers
 
 </script></section>
 
 <section>
-<h2>Geração de Números Aleatórios</h2>
+<h2>Random Number Generation</h2>
 
 <pre><code class="python" data-trim data-noescape>
 >>> from wolfcrypt.random import Random
@@ -379,7 +382,7 @@ b']\x93nk\x95\xbc@\xffX\xab\xdcB\xda\x11\xf7\x03'
 <section data-markdown><script type="text/template">
   <img class="plain" width=15% src={{ "/images/book.png" | prepend: site.baseurl }}>
 
-  # Documentação completa
+  # Complete Documentation
 
   [wolfssl.github.io/wolfcrypt-py](https://wolfssl.github.io/wolfcrypt-py/)
 </script></section>
