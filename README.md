@@ -1,9 +1,7 @@
-# wolfcrypt-py: Embalando segredos com Python
+# wolfcrypt: wrapping secrets with Python
 
-Já pensou no que aconteceria se alguém tivesse acesso às informações de login e senha de todos os usuários de uma aplicação sua? Como garantir que informações sensíveis estejam protegidas mesmo com vazamento de dados?
+The ancient art of keeping secrets safe is nowadays one of the pillars of the internet. e-commerce, online banking, video conferences and a lot of other things are protected by encryption to become viable. Becoming fluent in basic cryptographic operations is a precious tool for any software developer.
 
-E aquela outra sua aplicação ciente/servidor, como garantir a confidencialidade das informações que trafegam na rede? Como garantir que o cliente é realmente o cliente e não um agente malicioso?
+wolfcrypt is a Python library that encapsulates wolfSSL’s wolfCrypt API. wolfCrypt is a lightweight, portable, C-language-based crypto library targeted at IoT, embedded, and RTOS environments primarily because of its size, speed, and feature set. It works seamlessly in desktop, enterprise, and cloud environments as well. It is the crypto engine behind wolfSSl’s embedded ssl library.
 
-Nesse tutorial abordamos conceitos básicos de criptografia clássica e moderna, e também apresentamos o módulo wolfcrypt, engine de criptografia por trás da biblioteca wolfSSL responsável pela segurança de mais de 1 bilhão de aplicações e dispositivos.
-
-Utilizaremos de exemplos práticos e desafios para verificação do conhecimento adquirido no treinamento.
+I will talk about classic and modern cryptography concepts a.k.a. cryptography 101 and use the wolfcrypt python module to put those concepts in practice to keep information safe.
