@@ -282,34 +282,37 @@ b'Everyone gets Friday off.'
   ## Hash functions
 
   <table>
-  <tr>
-    <th>Hash</th>
-    <th>Tamanho</th>
-    <th>Exemplo</th>
-  </tr>
+    <thead>
+      <tr>
+        <th>Hash</th>
+        <th>Size</th>
+        <th>Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>SHA-1</td>
+        <td>160 bits</td>
+        <td><code>a33d8d465abb7cc30958b47095528619<br/>
+                  83c28f02</code></td>
+      </tr>
 
-  <tr>
-    <td>SHA-1</td>
-    <td>160 bits</td>
-    <td><code>a33d8d465abb7cc30958b47095528619<br/>
-              83c28f02</code></td>
-  </tr>
+      <tr>
+        <td>SHA-256</td>
+        <td>256 bits</td>
+        <td><code>2157db6d182dfce96fe8190e0117ea85<br/>
+                  38392658fdd9ae2d48268d4277d5dceb</code></td>
+      </tr>
 
-  <tr>
-    <td>SHA-256</td>
-    <td>256 bits</td>
-    <td><code>2157db6d182dfce96fe8190e0117ea85<br/>
-              38392658fdd9ae2d48268d4277d5dceb</code></td>
-  </tr>
-
-  <tr>
-    <td>SHA-512</td>
-    <td>512 bits</td>
-    <td><code>58c489dc1286f484b17473cbd519346e<br/>
-              5035640c27326ec7098e9b91d4c61e27<br/>
-              26eaa5b76eeb921c6f0796d3a281f3b7<br/>
-              dbbd3fa7e9c7e3f03d964795e2ba2f43</code></td>
-  </tr>
+      <tr>
+        <td>SHA-512</td>
+        <td>512 bits</td>
+        <td><code>58c489dc1286f484b17473cbd519346e<br/>
+                  5035640c27326ec7098e9b91d4c61e27<br/>
+                  26eaa5b76eeb921c6f0796d3a281f3b7<br/>
+                  dbbd3fa7e9c7e3f03d964795e2ba2f43</code></td>
+      </tr>
+    </tbody>
   </table>
 </script></section>
 
