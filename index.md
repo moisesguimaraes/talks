@@ -3,108 +3,91 @@ layout: slide
 ---
 
 <section data-markdown><script type="text/template">
-{% include pyconcz.html %}
+  {% include pyconcz.html %}
 
-# wolfcrypt-py
-### wrapping secrets with Python
+  # wolfcrypt-py
+  ### wrapping secrets with Python
 
-[Moisés Guimarães de Medeiros](https://github.com/moisesguimaraes)
+  [Moisés Guimarães de Medeiros](https://github.com/moisesguimaraes)
 
-June 8, 2017
-
+  June 8, 2017
 </script></section>
 
 <section data-markdown><script type="text/template">
+  {% include avatar.html %}
 
-{% include avatar.html %}
+  ## Moisés Guimarães de Medeiros
 
-## Moisés Guimarães de Medeiros
+  - Software Engineer @ PhoebusTecnologia[2006:2013]
 
-- Software Engineer @ wolfSSL[2013:]
+  - Software Engineer @ wolfSSL[2013:]
 
-- Professor and Course Coordinator @ IFPB[2013:]
-
-- Software Engieer @ PhoebusTecnologia[2006:2013]
-
+  - Professor @ IFPB[2013:]
 </script></section>
 
 <section data-markdown><script type="text/template">
+  {% include avatar.html %}
 
-{% include avatar.html %}
+  ## Moisés Guimarães de Medeiros
 
-## Moisés Guimarães de Medeiros
+  - Technologist Degree in Web Development
 
-- Information Security Specialist
+  - Specialist Degree Information Security
 
-- Web Development Technologist
-
-- Musician, Gamer and Atlete in the free time
-
+  - Musician, Gamer and Atlete in the free time
 </script></section>
 
 <section data-markdown><script type="text/template">
-{% include logo.html %}
+  {% include logo.html %}
 
-# wolfSSL Inc.
+  # wolfSSL Inc.
 
-Founded em 2009
+  Founded em 2009
 
-~ 20 employees
+  ~ 20 employees
 
-USA | Japan | Brazil | Australia | and growing...
-
+  USA | Japan | Brazil | Australia | and growing...
 </script></section>
 
 <section data-markdown><script type="text/template">
-  # wolfcrypt
+  # wolfCrypt
   ## wolfSSL Crypto Engine
 
   - lightweight C library
 
-  - known by its small footprint, speed and functionalities
-
   - widely used in the IoT market
 
-  - also available for desktop and the cloud.
+  - also available for desktop and the cloud
 
+  - known by its small footprint, speed and functionalities
 </script></section>
 
 <section data-markdown data-background-image="{{ "/images/segredo.jpg" | prepend: site.baseurl }}"><script type="text/template">
-  #### Quanto vale um segredo?
+  #### it's all about secrets
 </script></section>
 
 <section data-markdown data-background-image="{{ "/images/ancient.png" | prepend: site.baseurl }}"><script type="text/template">
-  #### Como era antigamente?
+  #### in the beginning
 </script></section>
 
 <section data-markdown data-background-image="{{ "/images/citala.png" | prepend: site.baseurl }}"><script type="text/template">
-  #### transposição
+  #### transposition
 </script></section>
 
 <section data-markdown data-background-image="{{ "/images/caesar.jpg" | prepend: site.baseurl }}"><script type="text/template">
-  #### substituição
-</script></section>
-
-<section data-markdown data-background-image="{{ "/images/enigma.jpg" | prepend: site.baseurl }}"><script type="text/template">
-  #### Como evoluiu?
-</script></section>
-
-<section data-markdown data-background-image="{{ "/images/enigma2.jpg" | prepend: site.baseurl }}"><script type="text/template">
-  #### enigma
-</script></section>
-
-<section data-markdown data-background-image="{{ "/images/bombe.jpg" | prepend: site.baseurl }}"><script type="text/template">
-  #### bombe
+  #### substitution
 </script></section>
 
 <section data-markdown data-background-image="{{ "/images/keyboard.jpg" | prepend: site.baseurl }}"><script type="text/template">
-  #### Onde estamos?
+  #### nowadays
 </script></section>
 
 <section data-markdown><script type="text/template">
   <img class="plain" width=25% src={{ "/images/whats.png" | prepend: site.baseurl }}>
 
-  As mensagens que você enviar e as ligações que você fizer nesta conversa estão protegidas com criptografia de ponta-a-ponta.
+  Messages you send to this chat and calls
+
+  are now secured with end-to-end encryption.
 </script></section>
 
 <section data-markdown><script type="text/template">
