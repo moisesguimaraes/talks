@@ -193,6 +193,11 @@ b'now is the time '
   <img class="plain" width=90% src={{ "/images/assimetrica.png" | prepend: site.baseurl }}>
 </script></section>
 
+<section data-markdown><script type="text/template">
+  # Asymmetric Key
+  <img class="plain" width=90% src={{ "/images/assimetrica2.png" | prepend: site.baseurl }}>
+</script></section>
+
 <section>
 <h2>Asymmetric Key Example</h2>
 
