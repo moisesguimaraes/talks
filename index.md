@@ -91,34 +91,35 @@ layout: slide
 </script></section>
 
 <section data-markdown><script type="text/template">
-  # Confidencialidade
+  # Confidentiality
 
   <img class="plain" width=75% src={{ "/images/confidencialidade.png" | prepend: site.baseurl }}>
 
-  protege contra acesso não autorizado
+  protects against unauthorized access
+  
 </script></section>
 
 <section data-markdown><script type="text/template">
-  # Integridade
+  # Integrity
 
   <img class="plain" width=95% src={{ "/images/integridade.png" | prepend: site.baseurl }}>
 
-  garante que a mensagem não foi alterada
+  ensures that the message has not been changed
 </script></section>
 
 <section data-markdown><script type="text/template">
-  # Autenticidade
+  # Authenticity
 
   <img class="plain" width=50% src={{ "/images/autenticidade.png" | prepend: site.baseurl }}>
 
-  verifica a identidade do remetente
+  verifies the sender's identity
 </script></section>
 
 <section data-markdown><script type="text/template">
 
 <img class="plain" width=20% src={{ "/images/gear.png" | prepend: site.baseurl }}>
 
-# Instalação
+# Installation
 
 <pre><code class="shell" data-trim data-noescape>
 $ git clone https://github.com/wolfssl/wolfssl.git
@@ -136,22 +137,22 @@ $ sudo -H pip install wolfcrypt
 <section data-markdown><script type="text/template">
   <img class="plain" width=45% src={{ "/images/algorithm.png" | prepend: site.baseurl }}>
 
-  # Algoritmos de Criptografia
+  # Cryptographic Algorithms
 </script></section>
 
 <section data-markdown><script type="text/template">
-  # Chave Simétrica
+  # Symmetric Key
   <img class="plain" width=90% src={{ "/images/simetrica.png" | prepend: site.baseurl }}>
 </script></section>
 
 <section data-markdown><script type="text/template">
-  ## Modos de cifragem em bloco: ECB
+  ## Block cipher modes: ECB
   
   <img class="plain" width=90% src={{ "/images/ecb.svg" | prepend: site.baseurl }}>
 </script></section>
 
 <section data-markdown><script type="text/template">
-  ## Modos de cifragem em bloco: ECB
+  ## Block cipher modes: ECB
   
   <img class="plain" src={{ "/images/tux.jpg" | prepend: site.baseurl }}>
   <img class="plain" src={{ "/images/tux-ecb.jpg" | prepend: site.baseurl }}>
@@ -159,19 +160,19 @@ $ sudo -H pip install wolfcrypt
 </script></section>
 
 <section data-markdown><script type="text/template">
-  ## Modos de cifragem em bloco: CBC
+  ## Block cipher modes: CBC
   
   <img class="plain" width=90% src={{ "/images/cbc.svg" | prepend: site.baseurl }}>
 </script></section>
 
 <section data-markdown><script type="text/template">
-  ## Modos de cifragem em bloco: CRT
+  ## Block cipher modes: CRT
   
   <img class="plain" width=90% src={{ "/images/crt.svg" | prepend: site.baseurl }}>
 </script></section>
 
 <section>
-<h2>Exemplo de Chave Simétrica</h2>
+<h2>Symmetric Key Example</h2>
 
 <pre><code class="python" data-trim data-noescape>
 >>> from wolfcrypt.ciphers import Aes, MODE_CBC
@@ -188,12 +189,12 @@ b'now is the time '
 </section>
 
 <section data-markdown><script type="text/template">
-  # Chave Assimétrica
+  # Asymmetric Key
   <img class="plain" width=90% src={{ "/images/assimetrica.png" | prepend: site.baseurl }}>
 </script></section>
 
 <section>
-<h2>Exemplo de Chave Assimétrica</h2>
+<h2>Asymmetric Key Example</h2>
 
 <pre><code class="python" data-trim data-noescape>
 >>> from wolfcrypt.ciphers import RsaPrivate, RsaPublic
