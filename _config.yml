@@ -6,9 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: wolfcrypt @ PyCon CZ 2017
+title: wolfcrypt @ PyParis 2017
 
-baseurl: "/pyconcz2017-wolfcrypt"
+baseurl: "/pyparis2017-wolfcrypt"
 url: "https://moisesguimaraes.github.io"
 
 email: moises@wolfssl.com
