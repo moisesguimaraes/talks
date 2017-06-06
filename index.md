@@ -116,25 +116,6 @@ layout: slide
 </script></section>
 
 <section data-markdown><script type="text/template">
-
-<img class="plain" width=20% src={{ "/images/gear.png" | prepend: site.baseurl }}>
-
-# Installation
-
-<pre><code class="shell" data-trim data-noescape>
-$ git clone https://github.com/wolfssl/wolfssl.git
-$ 
-$ cd wolfssl/
-$ ./autogen.sh
-$ ./configure --enable-sha512
-$ make
-$ sudo make install
-$ 
-$ sudo -H pip install wolfcrypt
-</code></pre>
-</script></section>
-
-<section data-markdown><script type="text/template">
   <img class="plain" width=45% src={{ "/images/algorithm.png" | prepend: site.baseurl }}>
 
   # Cryptographic Algorithms
@@ -370,6 +351,25 @@ b'\x8c'
 b']\x93nk\x95\xbc@\xffX\xab\xdcB\xda\x11\xf7\x03'
 </code></pre>
 </section>
+
+<section data-markdown><script type="text/template">
+
+<img class="plain" width=20% src={{ "/images/gear.png" | prepend: site.baseurl }}>
+
+# Installation
+
+<pre><code class="shell" data-trim data-noescape>
+$ git clone https://github.com/wolfssl/wolfssl.git
+$ 
+$ cd wolfssl/
+$ ./autogen.sh
+$ ./configure --enable-sha512
+$ make
+$ sudo make install
+$ 
+$ sudo -H pip install wolfcrypt
+</code></pre>
+</script></section>
 
 <section data-markdown><script type="text/template">
   <img class="plain" width=15% src={{ "/images/book.png" | prepend: site.baseurl }}>
