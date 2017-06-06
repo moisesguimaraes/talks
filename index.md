@@ -293,8 +293,8 @@ b'Everyone gets Friday off.'
 >>> from wolfcrypt.hashes import Sha256
 >>> 
 >>> s = Sha256()
->>> h.update("wolf")
->>> h.update("crypt")
+>>> s.update("wolf")
+>>> s.update("crypt")
 >>> 
 >>> s.digest()
 b'\x96\xe0.{\x1c\xbc\xd6\xf1\x04\xfe\x1f\xdbFR\x02zU\x05\xb6\x86R\xb7\x00\x95\xc61\x8f\x9d\xce\r\x18D'
