@@ -42,7 +42,7 @@ layout: slide
 
   # wolfSSL Inc.
 
-  Founded em 2009
+  Founded in 2009
 
   ~ 20 employees
 
