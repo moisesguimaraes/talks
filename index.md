@@ -40,11 +40,11 @@ layout: slide
 <section data-markdown><script type="text/template">
   {% include logo.html %}
 
-  # wolfSSL Inc.
+  Founded in 2004 as yaSSL (C++)
 
-  Founded in 2009
+  Re-writen in C in 2006 as cyaSSL
 
-  ~ 20 employees
+  ~ 26 employees (18 engineers)
 
   USA | Japan | Brazil | Australia | and growing...
 </script></section>
