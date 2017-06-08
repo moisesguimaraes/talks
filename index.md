@@ -44,9 +44,11 @@ layout: slide
 
   Re-writen in C in 2006 as cyaSSL
 
-  ~ 26 employees (18 engineers)
+  ~ 26 employees (18 crypto engineers)
 
   USA | Japan | Brazil | Australia | and growing...
+
+  Securing 2 Billion connections World Wide w/ 450+ OEM Customers
 </script></section>
 
 <section data-markdown><script type="text/template">
