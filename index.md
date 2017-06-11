@@ -13,57 +13,6 @@ layout: slide
   June 13, 2017
 </script></section>
 
-<section data-markdown><script type="text/template">
-  {% include avatar.html %}
-
-  ## Moisés Guimarães de Medeiros
-
-  - Software Engineer @ PhoebusTecnologia[2006:2013]
-
-  - Software Engineer @ wolfSSL[2013:]
-
-  - Professor @ IFPB[2013:]
-</script></section>
-
-<section data-markdown><script type="text/template">
-  {% include avatar.html %}
-
-  ## Moisés Guimarães de Medeiros
-
-  - Technologist Degree in Web Development
-
-  - Specialist Degree Information Security
-
-  - Musician, Gamer and Atlete in the free time
-</script></section>
-
-<section data-markdown><script type="text/template">
-  {% include logo.html %}
-
-  Founded in 2004 as yaSSL (C++)
-
-  Re-writen in C in 2006 as cyaSSL
-
-  ~ 26 employees (18 crypto engineers)
-
-  USA | Japan | Brazil | Australia | and growing...
-
-  Securing 2 Billion connections World Wide w/ 450+ OEM Customers
-</script></section>
-
-<section data-markdown><script type="text/template">
-  # wolfCrypt
-  ## wolfSSL Crypto Engine
-
-  - lightweight C library
-
-  - widely used in the IoT market
-
-  - also available for desktop and the cloud
-
-  - known by its small footprint, speed and functionalities
-</script></section>
-
 <section data-markdown data-background-image="{{ "/images/segredo.jpg" | prepend: site.baseurl }}"><script type="text/template">
   #### it's all about secrets
 </script></section>
@@ -382,12 +331,50 @@ $ sudo -H pip install wolfcrypt
 </script></section>
 
 <section data-markdown><script type="text/template">
+  # wolfCrypt
+  ## wolfSSL Crypto Engine
+
+  - lightweight C library
+
+  - widely used in the IoT market
+
+  - also available for desktop and the cloud
+
+  - known by its small footprint, speed and functionalities
+</script></section>
+
+<section data-markdown><script type="text/template">
+  # wolfcrypt
+  ## python crypto module
+
+  - Python wrapper around wolfCrypt C library
+
+  - PEP 247 - API for Cryptographic Hash Functions
+
+  - PEP 272 - API for Block Encryption Algorithms v1.0
+</script></section>
+
+
+<section data-markdown><script type="text/template">
+  {% include logo.html %}
+
+  Founded in 2004 as yaSSL (C++)
+
+  Re-writen in C in 2006 as cyaSSL
+
+  ~ 26 employees (18 crypto engineers)
+
+  USA | Japan | Brazil | Australia | and growing...
+
+  Securing 2 Billion connections World Wide w/ 450+ OEM Customers
+</script></section>
+
+<section data-markdown><script type="text/template">
 
 {% include logo.html %}
 
 ## Moisés Guimarães de Medeiros
 ### [moises@wolfssl.com](mailto:moises@wolfssl.com)
-### +55 (83) 99986-5511
 ### [www.wolfssl.com](https://www.wolfssl.com)
 
 </script></section>
