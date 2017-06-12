@@ -367,5 +367,6 @@ $ sudo -H pip install wolfcrypt
 ## Moisés Guimarães de Medeiros
 ### [moises@wolfssl.com](mailto:moises@wolfssl.com)
 ### [www.wolfssl.com](https://www.wolfssl.com)
+slides at https://moisesguimaraes.github.io/pyparis2017-wolfcrypt/
 
 </script></section>
