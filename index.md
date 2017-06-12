@@ -14,7 +14,7 @@ layout: slide
 </script></section>
 
 <section data-markdown data-background-image="{{ "/images/segredo.jpg" | prepend: site.baseurl }}"><script type="text/template">
-  #### it's all about secrets
+  #### why are secrets important?
 </script></section>
 
 <section data-markdown data-background-image="{{ "/images/ancient.png" | prepend: site.baseurl }}"><script type="text/template">
