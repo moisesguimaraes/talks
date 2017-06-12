@@ -72,7 +72,7 @@ layout: slide
   # Cryptographic Algorithms
 </script></section>
 
-{% include symmetric.html count=6 %}
+{% include symmetric.html %}
 
 <section data-markdown><script type="text/template">
   ## Block cipher modes: ECB
@@ -117,15 +117,7 @@ b'now is the time '
 </code></pre>
 </section>
 
-<section data-markdown><script type="text/template">
-  # Asymmetric Key
-  <img class="plain" width=90% src={{ "/images/assimetrica.png" | prepend: site.baseurl }}>
-</script></section>
-
-<section data-markdown><script type="text/template">
-  # Asymmetric Key
-  <img class="plain" width=90% src={{ "/images/assimetrica2.png" | prepend: site.baseurl }}>
-</script></section>
+{% include asymmetric.html %}
 
 <section>
 <h2>Asymmetric Key Example</h2>

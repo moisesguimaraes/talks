@@ -1,0 +1,20 @@
+{% for id in (1..6) %}
+{% if id == 1 %}
+<section data-markdown data-transition="slide-in none"><script type="text/template">
+{% else %}
+<section data-markdown data-transition="none"><script type="text/template">
+{% endif %}
+  ## Asymmetric Key Encryption
+  <img class="plain" width=90% src="{{ "/images/asymmetric-encrypt" | prepend: site.baseurl }}{{id}}.png">
+</script></section>
+{% endfor %}
+{% for id in (1..6) %}
+{% if id == 1 %}
+<section data-markdown data-transition="slide-in none"><script type="text/template">
+{% else %}
+<section data-markdown data-transition="none"><script type="text/template">
+{% endif %}
+  ## Asymmetric Key Signing
+  <img class="plain" width=90% src="{{ "/images/asymmetric-sign" | prepend: site.baseurl }}{{id}}.png">
+</script></section>
+{% endfor %}
