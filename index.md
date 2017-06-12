@@ -42,6 +42,14 @@ layout: slide
 </script></section>
 
 <section data-markdown><script type="text/template">
+  <img class="plain" width=25% src={{ "/images/column.png" | prepend: site.baseurl }}>
+  <img class="plain" width=25% src={{ "/images/column.png" | prepend: site.baseurl }}>
+  <img class="plain" width=25% src={{ "/images/column.png" | prepend: site.baseurl }}>
+
+  # Pillars of safe communication
+</script></section>
+
+<section data-markdown><script type="text/template">
   # Confidentiality
 
   <img class="plain" width=75% src={{ "/images/confidencialidade.png" | prepend: site.baseurl }}>
