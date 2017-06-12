@@ -72,10 +72,7 @@ layout: slide
   # Cryptographic Algorithms
 </script></section>
 
-<section data-markdown><script type="text/template">
-  # Symmetric Key
-  <img class="plain" width=90% src={{ "/images/simetrica.png" | prepend: site.baseurl }}>
-</script></section>
+{% include symmetric.html count=6 %}
 
 <section data-markdown><script type="text/template">
   ## Block cipher modes: ECB
