@@ -109,10 +109,9 @@ layout: slide
 </script></section>
 
 <section>
+<h2>Symmetric Key Example</h2>
+
 <pre><code class="python" data-trim data-noescape>
->>> #
->>> # Symmetric Key Example
->>> #
 >>> from wolfcrypt.ciphers import Aes, MODE_CBC
 >>> 
 >>> cipher = Aes(b'0123456789abcdef', MODE_CBC, b'1234567890abcdef')
