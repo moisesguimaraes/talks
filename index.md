@@ -101,9 +101,10 @@ layout: slide
 </script></section>
 
 <section>
-<h2>Symmetric Key Example</h2>
-
 <pre><code class="python" data-trim data-noescape>
+>>> #
+>>> # Symmetric Key Example
+>>> #
 >>> from wolfcrypt.ciphers import Aes, MODE_CBC
 >>> 
 >>> cipher = Aes(b'0123456789abcdef', MODE_CBC, b'1234567890abcdef')
@@ -174,10 +175,7 @@ b'Everyone gets Friday off.'
 </code></pre>
 </section>
 
-<section data-markdown><script type="text/template">
-  # Hash functions
-  <img class="plain" width=90% src={{ "/images/hash.png" | prepend: site.baseurl }}>
-</script></section>
+{% include hash.html %}
 
 <section data-markdown><script type="text/template">
   ## Properties of a good hash
@@ -244,10 +242,7 @@ b'96e02e7b1cbcd6f104fe1fdb4652027a5505b68652b70095c6318f9dce0d1844'
 </code></pre>
 </section>
 
-<section data-markdown><script type="text/template">
-  # HMAC
-  <img class="plain" width=90% src={{ "/images/hmac.png" | prepend: site.baseurl }}>
-</script></section>
+{% include hmac.html %}
 
 <section>
 <h2>HMAC example</h2>
