@@ -103,7 +103,7 @@ layout: slide
 </script></section>
 
 <section data-markdown><script type="text/template">
-  ## Block cipher modes: CRT
+  ## Block cipher modes: CTR
   
   <img class="plain" width=90% src={{ "/images/crt.svg" | prepend: site.baseurl }}>
 </script></section>
