@@ -2,94 +2,107 @@
 layout: slide
 ---
 
-<section data-markdown><script type="text/template">
-  {% include pyparis.html %}
+<section data-markdown data-background-image="{{ "/images/capa.png" | prepend: site.baseurl }}"><script type="text/template">
+</script></section>
 
-  # wolfcrypt-py
-  ### wrapping secrets with Python
+<section data-markdown data-background-image="{{ "/images/bg.png" | prepend: site.baseurl }}"><script type="text/template">
+  {% include roadsec.html %}
 
-  [Moisés Guimarães de Medeiros](https://github.com/moisesguimaraes)
+  ##### Embalando segredos com
+  #### Python
+  [.](https://moisesguimaraes.github.io)
+  ###### Moisés Guimarães de Medeiros
 
-  June 13, 2017
 </script></section>
 
 <section data-markdown data-background-image="{{ "/images/segredo.jpg" | prepend: site.baseurl }}"><script type="text/template">
-  #### why are secrets important?
+  #### Quanto vale um segredo?
 </script></section>
 
 <section data-markdown data-background-image="{{ "/images/ancient.png" | prepend: site.baseurl }}"><script type="text/template">
-  #### in the beginning
+  #### Como era antigamente?
 </script></section>
 
 <section data-markdown data-background-image="{{ "/images/citala.png" | prepend: site.baseurl }}"><script type="text/template">
-  #### transposition
+  #### transposição
 </script></section>
 
 <section data-markdown data-background-image="{{ "/images/caesar.jpg" | prepend: site.baseurl }}"><script type="text/template">
-  #### substitution
+  #### substituição
+</script></section>
+
+<section data-markdown data-background-image="{{ "/images/enigma.jpg" | prepend: site.baseurl }}"><script type="text/template">
+  #### Como evoluiu?
+</script></section>
+
+<section data-markdown data-background-image="{{ "/images/enigma2.jpg" | prepend: site.baseurl }}"><script type="text/template">
+  #### enigma
+</script></section>
+
+<section data-markdown data-background-image="{{ "/images/bombe.jpg" | prepend: site.baseurl }}"><script type="text/template">
+  #### bombe
 </script></section>
 
 <section data-markdown data-background-image="{{ "/images/keyboard.jpg" | prepend: site.baseurl }}"><script type="text/template">
-  #### nowadays
+  #### Onde estamos?
 </script></section>
+
 
 <section data-markdown><script type="text/template">
   <img class="plain" width=25% src={{ "/images/whats.png" | prepend: site.baseurl }}>
 
-  Messages you send to this chat and calls
-
-  are now secured with end-to-end encryption.
+  As mensagens que você enviar e as ligações que você fizer nesta conversa estão protegidas com criptografia de ponta-a-ponta.
 </script></section>
 
 <section data-markdown><script type="text/template">
+  #### Comunicação segura
+
   <img class="plain" width=25% src={{ "/images/column.png" | prepend: site.baseurl }}>
   <img class="plain" width=25% src={{ "/images/column.png" | prepend: site.baseurl }}>
   <img class="plain" width=25% src={{ "/images/column.png" | prepend: site.baseurl }}>
 
-  # Pillars of safe communication
 </script></section>
 
 <section data-markdown><script type="text/template">
-  # Confidentiality
+  #### Confidencialidade
 
   <img class="plain" width=75% src={{ "/images/confidencialidade.png" | prepend: site.baseurl }}>
 
-  protects against unauthorized access
-  
+  protege contra acesso não autorizado
 </script></section>
 
 <section data-markdown><script type="text/template">
-  # Integrity
+  #### Integridade
 
   <img class="plain" width=95% src={{ "/images/integridade.png" | prepend: site.baseurl }}>
 
-  ensures that the message has not been changed
+  garante que a mensagem não foi alterada
 </script></section>
 
 <section data-markdown><script type="text/template">
-  # Authenticity
+  #### Autenticidade
 
   <img class="plain" width=50% src={{ "/images/autenticidade.png" | prepend: site.baseurl }}>
 
-  verifies the sender's identity
+  verifica a identidade do remetente
 </script></section>
 
 <section data-markdown><script type="text/template">
-  <img class="plain" width=45% src={{ "/images/algorithm.png" | prepend: site.baseurl }}>
+  #### Algoritmos de Criptografia
 
-  # Cryptographic Algorithms
+  <img class="plain" width=45% src={{ "/images/algorithm.png" | prepend: site.baseurl }}>
 </script></section>
 
 {% include symmetric.html %}
 
 <section data-markdown><script type="text/template">
-  ## Block cipher modes: ECB
+  ##### Modos de cifragem: ECB
   
   <img class="plain" width=90% src={{ "/images/ecb.svg" | prepend: site.baseurl }}>
 </script></section>
 
 <section data-markdown><script type="text/template">
-  ## Block cipher modes: ECB
+  ##### Modos de cifragem: ECB
   
   <img class="plain" src={{ "/images/tux.jpg" | prepend: site.baseurl }}>
   <img class="plain" src={{ "/images/tux-ecb.jpg" | prepend: site.baseurl }}>
@@ -97,19 +110,19 @@ layout: slide
 </script></section>
 
 <section data-markdown><script type="text/template">
-  ## Block cipher modes: CBC
+  ##### Modos de cifragem: CBC
   
   <img class="plain" width=90% src={{ "/images/cbc.svg" | prepend: site.baseurl }}>
 </script></section>
 
 <section data-markdown><script type="text/template">
-  ## Block cipher modes: CTR
+  ##### Modos de cifragem: CTR
   
   <img class="plain" width=90% src={{ "/images/crt.svg" | prepend: site.baseurl }}>
 </script></section>
 
 <section>
-<h2>Symmetric Key Example</h2>
+<h5>Exemplo de Chave Simétrica</h5>
 
 <pre><code class="python" data-trim data-noescape>
 >>> from wolfcrypt.ciphers import Aes, MODE_CBC
@@ -128,7 +141,7 @@ b'now is the time '
 {% include asymmetric.html %}
 
 <section>
-<h2>Asymmetric Key Example</h2>
+<h5>Exemplo de Chave Assimétrica</h5>
 
 <pre><code class="python" data-trim data-noescape>
 >>> from wolfcrypt.ciphers import RsaPrivate, RsaPublic
@@ -185,23 +198,23 @@ b'Everyone gets Friday off.'
 {% include hash.html %}
 
 <section data-markdown><script type="text/template">
-  ## Properties of a good hash
-  - Easy to calculate
-  - Infeasible to guess the message from its hash
-  - Infeasible to modify the message without modifying its hash
-  - Infeasible to find two different messages with the same hash
+  ##### Propriedades de um bom Hash
+  - Fácil de calcular
+  - Inviável de forjar uma mensagem com um determinado resumo
+  - Inviável de modificar a mensagem sem modificar o resumo
+  - Inviável de encontrar duas mensagens com o mesmo resumo
 
 </script></section>
 
 <section data-markdown><script type="text/template">
-  ## Hash functions
+  #### Funções de Hash
 
   <table>
     <thead>
       <tr>
         <th>Hash</th>
-        <th>Size</th>
-        <th>Example</th>
+        <th>Tamanho</th>
+        <th>Exemplo</th>
       </tr>
     </thead>
     <tbody>
@@ -232,7 +245,7 @@ b'Everyone gets Friday off.'
 </script></section>
 
 <section>
-<h2>Hash example</h2>
+<h5>Exemplo de Hash</h5>
 
 <pre><code class="python" data-trim data-noescape>
 >>> from wolfcrypt.hashes import Sha256
@@ -252,7 +265,7 @@ b'96e02e7b1cbcd6f104fe1fdb4652027a5505b68652b70095c6318f9dce0d1844'
 {% include hmac.html %}
 
 <section>
-<h2>HMAC example</h2>
+<h5>Exemplo de HMAC</h5>
 
 <pre><code class="python" data-trim data-noescape>
 >>> from wolfcrypt.hashes import HmacSha256
@@ -272,12 +285,12 @@ b'18bf2a0939a26fdf5cc8e0c255942c8d59023b1c3c51df8ddb8633fbc166236f'
 <section data-markdown><script type="text/template">
   <img class="plain" width=25% src={{ "/images/dice.png" | prepend: site.baseurl }}>
 
-  # Random Numbers
+  #### Números Aleatórios
 
 </script></section>
 
 <section>
-<h2>Random Number Generation</h2>
+<h5>Geração de Números Aleatórios</h5>
 
 <pre><code class="python" data-trim data-noescape>
 >>> from wolfcrypt.random import Random
@@ -298,7 +311,7 @@ b']\x93nk\x95\xbc@\xffX\xab\xdcB\xda\x11\xf7\x03'
 
 <img class="plain" width=20% src={{ "/images/gear.png" | prepend: site.baseurl }}>
 
-# Installation
+#### Instalação
 
 <pre><code class="shell" data-trim data-noescape>
 $ git clone https://github.com/wolfssl/wolfssl.git
@@ -316,27 +329,27 @@ $ sudo -H pip install wolfcrypt
 <section data-markdown><script type="text/template">
   <img class="plain" width=15% src={{ "/images/book.png" | prepend: site.baseurl }}>
 
-  # Complete Documentation
+  #### Documentação
 
   [wolfssl.github.io/wolfcrypt-py](https://wolfssl.github.io/wolfcrypt-py/)
 </script></section>
 
 <section data-markdown><script type="text/template">
-  # wolfCrypt
-  ## wolfSSL Crypto Engine
+  #### wolfCrypt
+  ##### wolfSSL Crypto Engine
 
-  - lightweight C library
+  - Escrita em C, com foco em leveza e portabilidade.
 
-  - widely used in the IoT market
+  - Reconhecida pelo seu tamanho, velocidade e funcionalidades.
 
-  - also available for desktop and the cloud
+  - Amplamente utilizada no mercado de IoT.
 
-  - known by its small footprint, speed and functionalities
+  - Também disponível para desktop e cloud.
 </script></section>
 
 <section data-markdown><script type="text/template">
-  # wolfcrypt
-  ## python crypto module
+  #### wolfcrypt
+  ##### python crypto module
 
   - Python wrapper around wolfCrypt C library
 
@@ -349,24 +362,16 @@ $ sudo -H pip install wolfcrypt
 <section data-markdown><script type="text/template">
   {% include logo.html %}
 
-  Founded in 2004 as yaSSL (C++)
+  Fundada em 2004 como yaSSL (C++)
 
-  Re-writen in C in 2006 as cyaSSL
+  Reescrita em C em 2006 como cyaSSL
 
-  ~ 26 employees (18 crypto engineers)
+  ~ 26 empregados (18 desenvolvedores)
 
-  USA | Japan | Brazil | Australia | and growing...
+  EUA | Japão | Brasil | Austrália | e crescendo...
 
-  Securing 2 Billion connections World Wide w/ 450+ OEM Customers
+  Mais de 2 Bilhões de conexões securas em todo o mundo
 </script></section>
 
-<section data-markdown><script type="text/template">
-
-{% include logo.html %}
-
-## Moisés Guimarães de Medeiros
-### [moises@wolfssl.com](mailto:moises@wolfssl.com)
-### [www.wolfssl.com](https://www.wolfssl.com)
-slides at https://moisesguimaraes.github.io/pyparis2017-wolfcrypt/
-
+<section data-markdown data-background-image="{{ "/images/obrigado.png" | prepend: site.baseurl }}"><script type="text/template">
 </script></section>
