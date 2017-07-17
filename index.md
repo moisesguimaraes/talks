@@ -374,4 +374,5 @@ $ sudo -H pip install wolfcrypt
 </script></section>
 
 <section data-markdown data-background-image="{{ "/images/obrigado.png" | prepend: site.baseurl }}"><script type="text/template">
+.
 </script></section>
