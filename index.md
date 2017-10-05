@@ -12,3 +12,4 @@
 - 🇫🇷 06/13 [PyParis](https://moisesguimaraes.github.io/pyparis2017-wolfcrypt/)
 - 🇧🇷 07/01 [ROADSEC João Pessoa](https://moisesguimaraes.github.io/roadsec2017-wolfcrypt/)
 - 🇧🇷 07/17 [Semana da Computação - UFPB]({{ "/talks/sdc-2017" | prepend: site.baseurl }})
+- 🇧🇷 10/17 [Python Brasil[13]]({{ "/talks/pybr13" | prepend: site.baseurl }})
