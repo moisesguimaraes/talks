@@ -320,7 +320,7 @@ $ ./configure --enable-sha512
 $ make
 $ sudo make install
 $ 
-$ sudo -H pip install wolfcrypt
+$ pip install wolfcrypt
 </code></pre>
 </script></section>
 
