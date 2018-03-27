@@ -6,9 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: wolfcrypt talks
+title: my talks archive
 
-baseurl: "/wolfcrypt-py-talks"
+baseurl: "/talks"
 url: "https://moisesguimaraes.github.io"
 
 email: moises@wolfssl.com
