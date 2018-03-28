@@ -29,6 +29,23 @@ body {
   font-weight: inherit; }
 
 /*********************************************
+ * LAYOUT
+ *********************************************/
+.column {
+    float: left;
+    margin: 0 auto;
+    width: 50%;
+    overflow: hidden;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*********************************************
  * HEADERS
  *********************************************/
 .reveal h1,
