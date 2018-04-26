@@ -9,9 +9,9 @@
 title: talks archive
 
 baseurl: "/talks"
-url: "https://moisesguimaraes.github.io"
+url: "https://mguimaraes.org"
 
-email: moises@wolfssl.com
+email: contact@mguimaraes.org
 
 # Build settings
 markdown: kramdown

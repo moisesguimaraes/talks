@@ -3,6 +3,12 @@
 
 # 2018
 
+- 🇺🇦 28/04 [Understanding SSL/TLS connections with Python examples](
+    {{ "/events/pyconua-2018-04" | prepend: site.baseurl }})
+@ [PyCon UA](
+    https://2018.uapycon.org)
+
+
 - 🇨🇿 29/03 [Wrapping C libraries with CFFI](
     {{ "/events/pyvo-2018-03" | prepend: site.baseurl }})
 @ [Brněnské Pyvo](
