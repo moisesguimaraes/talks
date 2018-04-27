@@ -11,7 +11,7 @@ layout: slide
 
   ### April 28, 2018
 </script></section>
-<!--
+
 <section data-markdown data-transition="none"><script type="text/template">
   ## Who am I ?
 
@@ -29,7 +29,7 @@ layout: slide
     </div>
   </div>
 </script></section>
-
+<!--
 <section data-markdown data-transition="none"><script type="text/template">
   ## Who am I ?
 
@@ -48,7 +48,7 @@ layout: slide
     </div>
   </div>
 </script></section>
-
+-->
 <section data-markdown data-transition="none"><script type="text/template">
   ## Where am I from ?
 
@@ -63,7 +63,7 @@ layout: slide
     </div>
   </div>
 </script></section>
-
+<!--
 <section data-markdown data-transition="none"><script type="text/template">
   ## Where am I from ?
 
@@ -161,68 +161,39 @@ layout: slide
   # Cryptographic Algorithms
 </script></section>
 
-{% include crypt/symmetric.html lang=en %}
-
-{% include asymmetric.html lang=en %}
-
-{% include hash.html lang=en %}
-
 <section data-markdown><script type="text/template">
-  ## Properties of a good hash
-  - Easy to calculate
-  - Infeasible to guess the message from its hash
-  - Infeasible to modify the message without modifying its hash
-  - Infeasible to find two different messages with the same hash
-
+  # Symmetric Key
+  
+  <img class="plain" width=90% src="{{ "/images/crypt/symmetric/6.png" | prepend: site.baseurl }}">
 </script></section>
 
 <section data-markdown><script type="text/template">
-  ## Hash functions
-
-  <table>
-    <thead>
-      <tr>
-        <th>Hash</th>
-        <th>Size</th>
-        <th>Example</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>SHA-1</td>
-        <td>160 bits</td>
-        <td><code>a33d8d465abb7cc30958b47095528619<br/>
-                  83c28f02</code></td>
-      </tr>
-
-      <tr>
-        <td>SHA-256</td>
-        <td>256 bits</td>
-        <td><code>2157db6d182dfce96fe8190e0117ea85<br/>
-                  38392658fdd9ae2d48268d4277d5dceb</code></td>
-      </tr>
-
-      <tr>
-        <td>SHA-512</td>
-        <td>512 bits</td>
-        <td><code>58c489dc1286f484b17473cbd519346e<br/>
-                  5035640c27326ec7098e9b91d4c61e27<br/>
-                  26eaa5b76eeb921c6f0796d3a281f3b7<br/>
-                  dbbd3fa7e9c7e3f03d964795e2ba2f43</code></td>
-      </tr>
-    </tbody>
-  </table>
+  # Asymmetric Key
+  
+  <img class="plain" width=90% src="{{ "/images/crypt/asymmetric/encrypt6.png" | prepend: site.baseurl }}">
 </script></section>
 
 <section data-markdown><script type="text/template">
-  ## Digital Certificates
+  # Asymmetric Key
+  
+  <img class="plain" width=90% src="{{ "/images/crypt/asymmetric/sign6.png" | prepend: site.baseurl }}">
+</script></section>
+
+<section data-markdown><script type="text/template">
+  # Hash Functions
+  
+  <img class="plain" width=90% src="{{ "/images/crypt/hash/3.png" | prepend: site.baseurl }}">
+</script></section>
+
+<section data-markdown><script type="text/template">
+  # Certificates
 
   <img class="plain" width=100% src={{ "/images/crypt/certificates/certchain.png" | prepend: site.baseurl }}>
 
 </script></section>
 
 <section>
-<h2>Digital Certificates</h2>
+<h2>Digital Certificate</h2>
 
 <pre><code class="shell" data-trim data-noescape>
 $ cat ca-digicert.pem
@@ -254,7 +225,7 @@ vEsXCS+0yx5DaMkHJ8HSXPfqIbloEpw8nL+e/IBcm2PN7EeqJSdnoDfzAIJ9VNep
 </section>
 
 <section>
-<h2>Digital Certificates</h2>
+<h2>Digital Certificate</h2>
 
 <pre><code class="shell" data-trim data-noescape>
 $ openssl x509 -in ca-digicert.pem -text
