@@ -4,7 +4,12 @@
 {% else %}
 <section data-markdown data-transition="none"><script type="text/template">
 {% endif %}
-  # Funções de hash
+{% if include.lang == en %}
+  # Hash Functions
+{% else %}
+  ## Funções de hash
+{% endif %}
+  
   <img class="plain" width=90% src="{{ "/images/crypt/hash/" | prepend: site.baseurl }}{{id}}.png">
 </script></section>
 {% endfor %}

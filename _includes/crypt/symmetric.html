@@ -4,7 +4,11 @@
 {% else %}
 <section data-markdown data-transition="none"><script type="text/template">
 {% endif %}
-  # Chave Simétrica
+{% if include.lang == en %}
+  # Symmetric Key
+{% else %}
+  ## Chave Simétrica
+{% endif %}
   <img class="plain" width=90% src="{{ "/images/crypt/symmetric/" | prepend: site.baseurl }}{{id}}.png">
 </script></section>
 {% endfor %}

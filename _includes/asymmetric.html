@@ -4,7 +4,11 @@
 {% else %}
 <section data-markdown data-transition="none"><script type="text/template">
 {% endif %}
-  # Chave Assimétrica
+{% if include.lang == en %}
+  # Asymmetric Key
+{% else %}
+  ## Chave Assimétrica
+{% endif %}
   <img class="plain" width=90% src="{{ "/images/crypt/asymmetric/encrypt" | prepend: site.baseurl }}{{id}}.png">
 </script></section>
 {% endfor %}
@@ -14,7 +18,11 @@
 {% else %}
 <section data-markdown data-transition="none"><script type="text/template">
 {% endif %}
-  # Chave Assimétrica
+{% if include.lang == en %}
+  # Asymmetric Key
+{% else %}
+  ## Chave Assimétrica
+{% endif %}
   <img class="plain" width=90% src="{{ "/images/crypt/asymmetric/sign" | prepend: site.baseurl }}{{id}}.png">
 </script></section>
 {% endfor %}
