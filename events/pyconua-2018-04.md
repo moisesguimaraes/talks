@@ -337,6 +337,30 @@ Certificate:
   </table>
 </script></section>
 
+<section>
+<h1>handshake</h1>
+
+<pre><code class="text" data-trim data-noescape style="font-size: 30px;">
+  <div style="text-align:left;">>>> client hello</div>
+  <div style="text-align:right;">server hello <<<</div>
+  <div style="text-align:right;">certificate <<<</div>
+  <div style="text-align:right;">server key exchange <<<</div>
+  <div style="text-align:right;">server hello done <<<</div>
+  <div style="text-align:left;">>>> client key exchange</div>
+  <div style="text-align:left;">>>> change cipher spec</div>
+  <div style="text-align:left;">>>> finished</div>
+  <div style="text-align:right;">change cipher spec <<<</div>
+  <div style="text-align:right;">finished <<<</div>
+</code></pre>
+
+</section>
+
+<section data-markdown><script type="text/template">
+
+# demo
+
+</script></section>
+
 <section data-markdown><script type="text/template">
 
 ## Moisés Guimarães de Medeiros
