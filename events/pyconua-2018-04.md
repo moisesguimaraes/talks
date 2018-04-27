@@ -1,19 +1,15 @@
 ---
-title: Understanding SSL/TLS connections with Python examples @ PyCon UA
+title: Understanding SSL/TLS with Python examples @ PyCon UA
 layout: slide
 ---
 
-<section data-markdown data-transition="none"><script type="text/template">
-  {% include img.html src="logos/pyconau2018.jpg" width="25%" %}
+<section data-markdown data-background-image="{{ "/images/bg/pyconua-cover.jpeg" | prepend: site.baseurl }}"><script type="text/template">
+  ## Understanding SSL / TLS
+  ## with Python examples
 
-  <br>
+  <br><br><br><br><br><br><br><br><br><br>
 
-  ### Understanding SSL / TLS connections
-  ### with Python examples
-
-  <br>
-
-  April 28, 2018
+  ### April 28, 2018
 </script></section>
 
 <section data-markdown data-transition="none"><script type="text/template">
@@ -98,28 +94,28 @@ layout: slide
   </div>
 </script></section>
 
-<section data-markdown data-background-image="{{ "/images/segredo.jpg" | prepend: site.baseurl }}"><script type="text/template">
+<section data-markdown data-background-image="{{ "/images/bg/segredo.jpg" | prepend: site.baseurl }}"><script type="text/template">
   #### why are secrets important?
 </script></section>
 
-<section data-markdown data-background-image="{{ "/images/ancient.png" | prepend: site.baseurl }}"><script type="text/template">
+<section data-markdown data-background-image="{{ "/images/bg/ancient.png" | prepend: site.baseurl }}"><script type="text/template">
   #### in the beginning
 </script></section>
 
-<section data-markdown data-background-image="{{ "/images/citala.png" | prepend: site.baseurl }}"><script type="text/template">
+<section data-markdown data-background-image="{{ "/images/bg/citala.png" | prepend: site.baseurl }}"><script type="text/template">
   #### transposition
 </script></section>
 
-<section data-markdown data-background-image="{{ "/images/caesar.jpg" | prepend: site.baseurl }}"><script type="text/template">
+<section data-markdown data-background-image="{{ "/images/bg/caesar.jpg" | prepend: site.baseurl }}"><script type="text/template">
   #### substitution
 </script></section>
 
-<section data-markdown data-background-image="{{ "/images/keyboard.jpg" | prepend: site.baseurl }}"><script type="text/template">
+<section data-markdown data-background-image="{{ "/images/bg/keyboard.jpg" | prepend: site.baseurl }}"><script type="text/template">
   #### nowadays
 </script></section>
 
 <section data-markdown><script type="text/template">
-  <img class="plain" width=25% src={{ "/images/whats.png" | prepend: site.baseurl }}>
+  <img class="plain" width=25% src={{ "/images/logos/whats.png" | prepend: site.baseurl }}>
 
   Messages you send to this chat and calls
 
@@ -127,9 +123,9 @@ layout: slide
 </script></section>
 
 <section data-markdown><script type="text/template">
-  <img class="plain" width=25% src={{ "/images/column.png" | prepend: site.baseurl }}>
-  <img class="plain" width=25% src={{ "/images/column.png" | prepend: site.baseurl }}>
-  <img class="plain" width=25% src={{ "/images/column.png" | prepend: site.baseurl }}>
+  <img class="plain" width=25% src={{ "/images/icons/column.png" | prepend: site.baseurl }}>
+  <img class="plain" width=25% src={{ "/images/icons/column.png" | prepend: site.baseurl }}>
+  <img class="plain" width=25% src={{ "/images/icons/column.png" | prepend: site.baseurl }}>
 
   # Pillars of safe communication
 </script></section>
@@ -137,7 +133,7 @@ layout: slide
 <section data-markdown><script type="text/template">
   # Confidentiality
 
-  <img class="plain" width=75% src={{ "/images/confidencialidade.png" | prepend: site.baseurl }}>
+  <img class="plain" width=75% src={{ "/images/crypt/abc/confidencialidade.png" | prepend: site.baseurl }}>
 
   protects against unauthorized access
   
@@ -146,7 +142,7 @@ layout: slide
 <section data-markdown><script type="text/template">
   # Integrity
 
-  <img class="plain" width=95% src={{ "/images/integridade.png" | prepend: site.baseurl }}>
+  <img class="plain" width=95% src={{ "/images/crypt/abc/integridade.png" | prepend: site.baseurl }}>
 
   ensures that the message has not been changed
 </script></section>
@@ -154,13 +150,13 @@ layout: slide
 <section data-markdown><script type="text/template">
   # Authenticity
 
-  <img class="plain" width=50% src={{ "/images/autenticidade.png" | prepend: site.baseurl }}>
+  <img class="plain" width=50% src={{ "/images/crypt/abc/autenticidade.png" | prepend: site.baseurl }}>
 
   verifies the sender's identity
 </script></section>
 
 <section data-markdown><script type="text/template">
-  <img class="plain" width=45% src={{ "/images/algorithm.png" | prepend: site.baseurl }}>
+  <img class="plain" width=45% src={{ "/images/icons/algorithm.png" | prepend: site.baseurl }}>
 
   # Cryptographic Algorithms
 </script></section>
@@ -170,27 +166,27 @@ layout: slide
 <section data-markdown><script type="text/template">
   ## Block cipher modes: ECB
   
-  <img class="plain" width=90% src={{ "/images/ecb.svg" | prepend: site.baseurl }}>
+  <img class="plain" width=90% src={{ "/images/crypt/symmetric/ecb.svg" | prepend: site.baseurl }}>
 </script></section>
 
 <section data-markdown><script type="text/template">
   ## Block cipher modes: ECB
   
-  <img class="plain" src={{ "/images/tux.jpg" | prepend: site.baseurl }}>
-  <img class="plain" src={{ "/images/tux-ecb.jpg" | prepend: site.baseurl }}>
-  <img class="plain" src={{ "/images/tux-secure.jpg" | prepend: site.baseurl }}>
+  <img class="plain" src={{ "/images/crypt/symmetric/tux.jpg" | prepend: site.baseurl }}>
+  <img class="plain" src={{ "/images/crypt/symmetric/tux-ecb.jpg" | prepend: site.baseurl }}>
+  <img class="plain" src={{ "/images/crypt/symmetric/tux-secure.jpg" | prepend: site.baseurl }}>
 </script></section>
 
 <section data-markdown><script type="text/template">
   ## Block cipher modes: CBC
   
-  <img class="plain" width=90% src={{ "/images/cbc.svg" | prepend: site.baseurl }}>
+  <img class="plain" width=90% src={{ "/images/crypt/symmetric/cbc.svg" | prepend: site.baseurl }}>
 </script></section>
 
 <section data-markdown><script type="text/template">
   ## Block cipher modes: CTR
   
-  <img class="plain" width=90% src={{ "/images/crt.svg" | prepend: site.baseurl }}>
+  <img class="plain" width=90% src={{ "/images/crypt/symmetric/ctr.svg" | prepend: site.baseurl }}>
 </script></section>
 
 <section>
@@ -355,7 +351,7 @@ b'18bf2a0939a26fdf5cc8e0c255942c8d59023b1c3c51df8ddb8633fbc166236f'
 </section>
 
 <section data-markdown><script type="text/template">
-  <img class="plain" width=25% src={{ "/images/dice.png" | prepend: site.baseurl }}>
+  <img class="plain" width=25% src={{ "/images/icons/dice.png" | prepend: site.baseurl }}>
 
   # Random Numbers
 
@@ -381,7 +377,7 @@ b']\x93nk\x95\xbc@\xffX\xab\xdcB\xda\x11\xf7\x03'
 
 <section data-markdown><script type="text/template">
 
-<img class="plain" width=20% src={{ "/images/gear.png" | prepend: site.baseurl }}>
+<img class="plain" width=20% src={{ "/images/icons/gear.png" | prepend: site.baseurl }}>
 
 # Installation
 
@@ -399,7 +395,7 @@ $ sudo -H pip install wolfcrypt
 </script></section>
 
 <section data-markdown><script type="text/template">
-  <img class="plain" width=15% src={{ "/images/book.png" | prepend: site.baseurl }}>
+  <img class="plain" width=15% src={{ "/images/icons/book.png" | prepend: site.baseurl }}>
 
   # Complete Documentation
 
