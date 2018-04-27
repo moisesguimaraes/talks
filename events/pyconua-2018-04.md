@@ -11,7 +11,7 @@ layout: slide
 
   ### April 28, 2018
 </script></section>
-
+<!--
 <section data-markdown data-transition="none"><script type="text/template">
   ## Who am I ?
 
@@ -93,7 +93,7 @@ layout: slide
     </div>
   </div>
 </script></section>
-
+-->
 <section data-markdown data-background-image="{{ "/images/bg/segredo.jpg" | prepend: site.baseurl }}"><script type="text/template">
   #### why are secrets important?
 </script></section>
