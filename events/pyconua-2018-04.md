@@ -415,6 +415,7 @@ Certificate:
 ## Moisés Guimarães de Medeiros
 ### [{{ site.email }}](mailto:{{ site.email }})
 ### [{{ site.url }}]({{ site.url }})
+### @moisesguimaraes
 slides at {{ site.baseurl | prepend: site.url }}
 
 </script></section>
