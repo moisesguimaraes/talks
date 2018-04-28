@@ -412,6 +412,8 @@ Certificate:
 
 <section data-markdown><script type="text/template">
 
+<img src="http://api.qrserver.com/v1/create-qr-code/?color=000000&amp;bgcolor=FFFFFF&amp;data=http%3A%2F%2Fmguimaraes.org%2Ftalks%2Fevents%2Fpyconua-2018-04%2F&amp;qzone=1&amp;margin=0&amp;size=200x200&amp;ecc=L" alt="qr code" />
+
 ## Moisés Guimarães de Medeiros
 ### [{{ site.email }}](mailto:{{ site.email }})
 ### [{{ site.url }}]({{ site.url }})
