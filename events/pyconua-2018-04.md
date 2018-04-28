@@ -355,9 +355,58 @@ Certificate:
 
 </section>
 
+<section>
+<h1>client</h1>
+
+<pre><code class="shell" data-trim data-noescape>
+  $ ./examples/client.py --help
+  usage: client.py [-?] [-h host] [-p port] [-v version] [-l ciphers]
+                  [-c certificate] [-k key] [-A ca_file] [-d] [-g] [-m message]
+
+  optional arguments:
+    -?, --help      show this help message and exit
+    -h host         Host to connect to, default 127.0.0.1
+    -p port         Port to connect on, not 0, default 11111
+    -v version      SSL version [0-4] (SSLv3, TLSv1, TLSv1.1, TLSv1.2, SSLv23)
+    -l ciphers      Cipher suite list (: delimited)
+    -c certificate  Certificate file, default ./certs/client-cert.pem
+    -k key          Key file, default ./certs/client-key.pem
+    -A ca_file      Certificate Authority file, default ./certs/ca-cert.pem
+    -d              Disable client cert check
+    -g              Send server HTTP GET
+    -m message      Message to be sent to the server
+</code></pre>
+
+</section>
+
+<section>
+<h1>server</h1>
+
+<pre><code class="shell" data-trim data-noescape>
+  $ ./examples/server.py --help
+  usage: server.py [-?] [-p port] [-v version] [-l ciphers] [-c certificate]
+                  [-k key] [-A ca_file] [-d] [-b] [-i]
+
+  optional arguments:
+    -?, --help      show this help message and exit
+    -p port         Port to listen on, not 0, default 11111
+    -v version      SSL version [0-4] (SSLv3, TLSv1, TLSv1.1, TLSv1.2, SSLv23)
+    -l ciphers      Cipher suite list (: delimited)
+    -c certificate  Certificate file, default ./certs/server-cert.pem
+    -k key          Key file, default ./certs/server-key.pem
+    -A ca_file      Certificate Authority file, default ./certs/client-cert.pem
+    -d              Disable client cert check
+    -b              Bind to any interface instead of localhost only
+    -i              Loop indefinitely (allow repeated connections)
+</code></pre>
+
+</section>
+
 <section data-markdown><script type="text/template">
 
-# demo
+# demo time
+
+<img class="plain" width=100% src={{ "/images/logos/wireshark.png" | prepend: site.baseurl }}>
 
 </script></section>
 
