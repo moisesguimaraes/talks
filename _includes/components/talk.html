@@ -36,9 +36,15 @@
 		<img src="{{ site.baseurl }}{{ talk.thumb }}" alt="" />
 	</a>
 
-	<h2>{{ talk.title }}</h2>
+	<h2>{{ talk.event }}<br />{{ talk.title }}</h2>
 
-	{% for link in talk.links %}
+	{% if talk.url %}
+	<a class="special button" href="{{ talk.url | prepend: site.baseurl }}" target="_blank">
+		slides
+	</a>
+	{% endif %}
+
+	{% for link in talk.external_links %}
 		<a class="special button" href="{{ link[1] }}" target="_blank">
 			{{ link[0] }}
 		</a>

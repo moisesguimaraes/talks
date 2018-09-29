@@ -1,71 +1,29 @@
-- full: /images/fulls/10.jpg
-  thumb: /images/thumbs/10.jpg
-  title: 🇧🇷 &middot; 19/10/18 &middot; Python Brasil[14]<br />Entendendo o que danado é SSL/TLS com exemplos em Python
-  links:
-    slides: images/fulls/10.jpg
-
-- full: /images/fulls/11.jpg
-  thumb: /images/thumbs/11.jpg
-  title: 🇧🇷 &middot; 20/10/18 &middot; Python Brasil[14]<br />Reutilizando código C no Python com CFFI
-  links:
-    slides: images/fulls/11.jpg
-
-- full: /images/fulls/12.jpg
-  thumb: /images/thumbs/12.jpg
-  title: 🇧🇷 &middot; 21/10/18 &middot; Python Brasil[14]<br />Application/Service Configuration sem dor de cabeça
-  links:
-    slides: images/fulls/12.jpg
-
-- full: /images/fulls/01.jpg
-  thumb: /images/thumbs/01.jpg
-  title: 🇺🇦 &middot; 28/04/18 &middot; PyCon Ukraine<br /> Understanding SSL/TLS with Python examples
-  links:
-    slides: events/pyconua-2018-04
-
-- full: /images/fulls/02.jpg
-  thumb: /images/thumbs/02.jpg
-  title: 🇨🇿 &middot; 29/03/18 &middot; Brněnské Pyvo<br /> Wrapping C libraries with CFFI
-  links:
-    slides: events/pyvo-2018-03
-
-- full: /images/fulls/03.jpg
-  thumb: /images/thumbs/03.jpg
-  title: 🇧🇷 &middot; 06/10/17 &middot; Python Brasil[13]<br />Embalando segredos com Python
-  links:
-    slides: events/pybr13
-
-- full: /images/fulls/04.jpg
-  thumb: /images/thumbs/04.jpg
-  title: 🇧🇷 &middot; 17/07/17 &middot; Semana da Computação &middot; UFPB<br />Embalando segredos com Python
-  links:
-    slides: events/sdc-2017
-
 - full: /images/fulls/05.jpg
   thumb: /images/thumbs/05.jpg
   title: 🇧🇷 &middot; 01/07/17 &middot; ROADSEC 2017 &middot; João Pessoa<br />Embalando segredos com Python
-  links:
+  external_links:
     slides: https://moisesguimaraes.github.io/roadsec2017-wolfcrypt/
 
 - full: /images/fulls/06.jpg
   thumb: /images/thumbs/06.jpg
   title: "🇫🇷 &middot; 13/06/17 &middot; PyParis<br />wolfcrypt-py: wrapping secrets with Python"
-  links:
+  external_links:
     slides: https://moisesguimaraes.github.io/pyparis2017-wolfcrypt/
 
 - full: /images/fulls/07.jpg
   thumb: /images/thumbs/07.jpg
   title: "🇨🇿 &middot; 08/06/17 &middot; PyCon CZ<br />wolfcrypt-py: wrapping secrets with Python"
-  links:
+  external_links:
     slides: https://moisesguimaraes.github.io/pyconcz2017-wolfcrypt/
 
 - full: /images/fulls/08.jpg
   thumb: /images/thumbs/08.jpg
   title: 🇧🇷 &middot; 13/10/16 &middot; Python Brasil[12]<br />Embalando segredos com Python
-  links:
+  external_links:
     slides: https://moisesguimaraes.github.io/pybr12-wolfcrypt-py/
 
 - full: /images/fulls/expotec2016.jpg
   thumb: /images/thumbs/09.jpg
   title: 🇧🇷 &middot; 27/08/16 &middot; Expotec 2016<br />Embalando segredos com Python
-  links:
+  external_links:
     slides: https://moisesguimaraes.github.io/expotec-2016-wolfcrypt-py/

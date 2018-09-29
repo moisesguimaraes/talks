@@ -22,6 +22,11 @@ layout: multiverse
 <!-- Main -->
 	<section id="main">
 
+		{% for talk in site.talks reversed %}
+			{% include components/talk.html talk=talk %}
+		{% endfor %}
+
+	<!-- older talks -->
 		{% for talk in site.data.talks %}
 			{% include components/talk.html talk=talk %}
 		{% endfor %}
