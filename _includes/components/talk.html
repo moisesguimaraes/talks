@@ -35,6 +35,12 @@
 	<a href="{{ site.baseurl }}{{ talk.full }}" class="image">
 		<img src="{{ site.baseurl }}{{ talk.thumb }}" alt="" />
 	</a>
+
 	<h2>{{ talk.title }}</h2>
-	<a href="{{ site.baseurl }}{{ talk.url }}" target="_blank">slides</a>
+
+	{% for link in talk.links %}
+		<a class="special button" href="{{ link[1] }}" target="_blank">
+			{{ link[0] }}
+		</a>
+	{% endfor %}
 </article>
