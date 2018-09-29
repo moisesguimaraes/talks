@@ -1,29 +1,29 @@
-- full: /images/fulls/05.jpg
-  thumb: /images/thumbs/05.jpg
+- full: /images/fulls/roadsec2017.png
+  thumb: /images/thumbs/roadsec2017.png
   title: 🇧🇷 &middot; 01/07/17 &middot; ROADSEC 2017 &middot; João Pessoa<br />Embalando segredos com Python
   external_links:
     slides: https://moisesguimaraes.github.io/roadsec2017-wolfcrypt/
 
-- full: /images/fulls/06.jpg
-  thumb: /images/thumbs/06.jpg
+- full: /images/fulls/pyparis2017.png
+  thumb: /images/fulls/pyparis2017.png
   title: "🇫🇷 &middot; 13/06/17 &middot; PyParis<br />wolfcrypt-py: wrapping secrets with Python"
   external_links:
     slides: https://moisesguimaraes.github.io/pyparis2017-wolfcrypt/
 
-- full: /images/fulls/07.jpg
-  thumb: /images/thumbs/07.jpg
+- full: /images/fulls/pyconcz2017.png
+  thumb: /images/fulls/pyconcz2017.png
   title: "🇨🇿 &middot; 08/06/17 &middot; PyCon CZ<br />wolfcrypt-py: wrapping secrets with Python"
   external_links:
     slides: https://moisesguimaraes.github.io/pyconcz2017-wolfcrypt/
 
-- full: /images/fulls/08.jpg
-  thumb: /images/thumbs/08.jpg
+- full: /images/fulls/pybr2016.jpg
+  thumb: /images/fulls/pybr2016.jpg
   title: 🇧🇷 &middot; 13/10/16 &middot; Python Brasil[12]<br />Embalando segredos com Python
   external_links:
     slides: https://moisesguimaraes.github.io/pybr12-wolfcrypt-py/
 
 - full: /images/fulls/expotec2016.jpg
-  thumb: /images/thumbs/09.jpg
+  thumb: /images/fulls/expotec2016.jpg
   title: 🇧🇷 &middot; 27/08/16 &middot; Expotec 2016<br />Embalando segredos com Python
   external_links:
     slides: https://moisesguimaraes.github.io/expotec-2016-wolfcrypt-py/
