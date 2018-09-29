@@ -32,8 +32,9 @@
 {% assign talk = include.talk %}
 
 <article class="thumb">
-	<a href="{{ site.baseurl }}{{ talk.url }}" class="image">
+	<a href="{{ site.baseurl }}{{ talk.full }}" class="image">
 		<img src="{{ site.baseurl }}{{ talk.thumb }}" alt="" />
 	</a>
 	<h2>{{ talk.title }}</h2>
+	<a href="{{ site.baseurl }}{{ talk.url }}" target="_blank">slides</a>
 </article>
