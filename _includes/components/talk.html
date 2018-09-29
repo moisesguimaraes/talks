@@ -1,0 +1,39 @@
+{% comment %}
+
+	Multiverse by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+
+	Name:
+
+		Talk
+
+	Example:
+
+		---
+		talks:
+		- url: /slides/pybr14
+		  thumb: /images/thumbs/01.jpg
+		  title: Magna feugiat lorem
+		- url: /slides/pybr13
+		  thumb: /images/thumbs/02.jpg
+		  title: Nisl adipiscing
+		- url: /slides/pybr12
+		  thumb: /images/thumbs/03.jpg
+		  title: Tempus aliquam veroeros
+		---
+
+		{% for talk in page.talks %}
+			{% include components/talk.html talk=talk %}
+		{% endfor %}
+
+{% endcomment %}
+
+{% assign talk = include.talk %}
+
+<article class="thumb">
+	<a href="{{ site.baseurl }}{{ talk.url }}" class="image">
+		<img src="{{ site.baseurl }}{{ talk.thumb }}" alt="" />
+	</a>
+	<h2>{{ talk.title }}</h2>
+</article>

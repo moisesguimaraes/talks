@@ -1,0 +1,16 @@
+- id: panel-1
+  title: One
+  icon: fa-diamond
+  excerpt: >
+    <h2>Sample Panel One</h2>
+    <p>Tempora recusandae facilis facere, doloribus harum repellendus modi, ullam eius omnis fugit et nemo cupiditate? Laboriosam, error odio perferendis, doloremque recusandae magnam. Consectetur adipisicing elit. Culpa non repellat dolorem atque exercitationem perspiciatis quia enim. Beatae numquam facere laborum ab, voluptatum magni soluta non sequi itaque accusamus, reprehenderit?</p>
+
+- id: panel-2
+  title: Two
+  icon: fa-cog
+  excerpt: >
+    <h2>Sample Panel Two</h2>
+    <p>Corrupti dolorem eius magni id adipisci, quod eum aliquid veritatis. Odit quisquam aut dolores, natus quibusdam aperiam hic quaerat illo. Nemo, doloribus! Consectetur adipisicing elit. Dignissimos nemo possimus rerum. Explicabo incidunt dolorum vel illo laudantium quos, aspernatur ad impedit praesentium, saepe dolor, nam maxime tempora tempore iusto.</p>
+  excerpt2: >
+    <h2>Lorem ipsum dolor</h2>
+    <p>Odit ipsum itaque obcaecati dolor voluptates quis reiciendis dignissimos doloremque ea. Reiciendis laboriosam aspernatur autem delectus soluta repellendus nisi numquam, sapiente minus! Consectetur adipisicing elit. Dolor ducimus veniam facere atque reiciendis nostrum, tenetur explicabo aliquam magni, minima vel libero! Tempora sapiente repellat, odit minus.</p>

@@ -1,0 +1,29 @@
+---
+layout: multiverse
+---
+
+{% comment %}
+
+	Multiverse by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+
+	Name:
+
+		Home page
+
+	Description:
+
+		Generates a grid of gallery thumbnails with links to the
+		full-size image. Gallery elements are defined in _data/images.yml.
+
+{% endcomment %}
+
+<!-- Main -->
+	<section id="main">
+
+		{% for talk in site.data.talks %}
+			{% include components/talk.html talk=talk %}
+		{% endfor %}
+
+	</section>

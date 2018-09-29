@@ -1,0 +1,46 @@
+{% comment %}
+
+	Multiverse by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+
+	Name:
+
+		Header and panel navigation
+
+	Description:
+
+		Generates the site header and navigation to open panels.
+
+	Example:
+
+		{% include layout/header.html %}
+
+{% endcomment %}
+
+<!-- Header -->
+	<header id="header">
+		<h1><a href="{{ site.baseurl }}/">
+			<strong>{{ site.title }}</strong> {{ site.tagline }}
+		</a></h1>
+
+		<nav>
+			<ul>
+
+				{% for panel in site.data.panels %}
+
+					{% if panel.icon %}
+						{% assign link_class = "icon " | append: panel.icon %}
+					{% else %}
+						{% assign link_class = "" %}
+					{% endif %}
+
+					<li><a href="#{{ panel.id }}" class="{{ link_class }}">{{ panel.title }}</a></li>
+
+				{% endfor %}
+
+				<li><a href="#footer" class="icon fa-info-circle">About</a></li>
+
+			</ul>
+		</nav>
+	</header>

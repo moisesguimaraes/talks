@@ -1,0 +1,43 @@
+{% comment %}
+
+	Multiverse by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+
+	Name:
+
+		Image
+
+	Example:
+
+		---
+		images:
+		- full: /images/fulls/01.jpg
+		  thumb: /images/thumbs/01.jpg
+		  title: Magna feugiat lorem
+		  excerpt: Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.
+		- full: /images/fulls/02.jpg
+		  thumb: /images/thumbs/02.jpg
+		  title: Nisl adipiscing
+		  excerpt: Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.
+		- full: /images/fulls/03.jpg
+		  thumb: /images/thumbs/03.jpg
+		  title: Tempus aliquam veroeros
+		  excerpt: Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.
+		---
+
+		{% for image in page.images %}
+			{% include components/image.html image=image %}
+		{% endfor %}
+
+{% endcomment %}
+
+{% assign image = include.image %}
+
+<article class="thumb">
+	<a href="{{ site.baseurl }}{{ image.full }}" class="image">
+		<img src="{{ site.baseurl }}{{ image.thumb }}" alt="" />
+	</a>
+	<h2>{{ image.title }}</h2>
+	<p>{{ image.excerpt | remove: "<p>" | remove: "</p>" }}</p>
+</article>
