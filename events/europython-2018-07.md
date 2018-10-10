@@ -5,20 +5,20 @@ layout: slide
 
 <section data-markdown><script type="text/template">
   
-  {% include img.html src="logos/foxdot.png" width="25%" %}
+  {% include slides/components/image.html src="logos/foxdot.png" width="25%" %}
 
   ## Live Music with
   # FoxDot
 </script></section>
 
 <section data-markdown><script type="text/template">
-{% include img.html src="bg/unicorn.jpg" width="90%" %}
+{% include slides/components/image.html src="bg/unicorn.jpg" width="90%" %}
   ## 1st #europython
 </script></section>
 
 <section data-markdown><script type="text/template">
   
-  {% include img.html src="foxdot/tweet.png" width="90%" %}
+  {% include slides/components/image.html src="foxdot/tweet.png" width="90%" %}
 
 </script></section>
 
@@ -32,11 +32,11 @@ layout: slide
 </script></section>
 
 <section data-markdown><script type="text/template">
-  {% include img.html src="logos/avatulhu.png" width="50%" %}
+  {% include slides/components/image.html src="logos/avatulhu.png" width="50%" %}
 </script></section>
 
 <section data-markdown><script type="text/template">
-  {% include img.html src="logos/foxdot.png" width="30%" %}
+  {% include slides/components/image.html src="logos/foxdot.png" width="30%" %}
 
   # foxdot.org
 </script></section>
