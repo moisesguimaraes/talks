@@ -1,6 +1,1 @@
-<img
-  src={{ "/images/" | prepend: site.baseurl | append: include.src }}
-  class="plain"
-  width="{% if include.width %}{{ include.width }}{% else %}50%{% endif %}"
-  style="{% if include.round %}border-radius: 50%;{% endif %}"
-/>
+<img src={{ "/images/" | prepend: site.baseurl | append: include.src }} width="{% if include.width %}{{ include.width }}{% else %}50%{% endif %}" class="plain" {% if include.round %}style="border-radius: 50%;"{% endif %}/>

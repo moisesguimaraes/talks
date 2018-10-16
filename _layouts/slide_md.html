@@ -1,0 +1,18 @@
+---
+layout: slide
+---
+{% for slide in page.slides %}
+  <section data-markdown
+    data-transition="{{ slide.transition | default: 'none' }}"
+    data-background="{{ slide.background_color | default: site.background_color }}"
+
+    {% if slide.background %}
+      data-background-image="{{ slide.background | prepend: site.baseurl }}"
+    {% endif %}
+  >
+    <textarea data-template>
+
+      {{ slide.title }} <div> {% if slide.image %} {% include slides/components/image.html src=slide.image.src width=slide.image.width %} {% endif %} </div> {{ slide.body }}
+    </textarea>
+  </section>
+{% endfor %}

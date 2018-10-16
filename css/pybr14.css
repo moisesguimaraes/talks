@@ -16,11 +16,11 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 30px;
   font-weight: normal;
-  color: #122e45; }
+  color: #000; } /* #122e45 */
 
 ::selection {
   color: #fff;
-  background: #122e45;
+  background: #000;
   text-shadow: none; }
 
 .reveal .slides > section,
@@ -66,13 +66,12 @@ body {
 .reveal h1,
 .reveal h2,
 .reveal h3 {
-  color: #122e45;
+  color: #000;
 }
 .reveal h4,
 .reveal h5,
 .reveal h6 {
   color: #fff;
-  text-shadow: -1px 0 #122e45, 0 1px #122e45, 1px 0 #122e45, 0 -1px #122e45;
 }
 
 .reveal h1 {
