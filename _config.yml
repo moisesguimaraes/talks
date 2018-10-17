@@ -15,6 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Talks
 tagline: by Moisés Guimarães
+author: Moisés Guimarães de Medeiros
 email: guimaraes+talks@pm.me
 instagram: moguimar
 facebook: guimaraes.moises
@@ -25,7 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "/talks" # the subpath of your site, e.g. /blog
-url: "https://moisesguimaraes.github.io" # the base hostname & protocol for your site
+url: "https://moisesguimaraes.com" # the base hostname & protocol for your site
 
 collections:
   talks:
