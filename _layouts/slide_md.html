@@ -2,17 +2,33 @@
 layout: slide
 ---
 {% for slide in page.slides %}
-  <section data-markdown
+  <section
     data-transition="{{ slide.transition | default: 'none' }}"
     data-background="{{ slide.background_color | default: site.background_color }}"
 
-    {% if slide.background %}
-      data-background-image="{{ slide.background | prepend: site.baseurl }}"
+    {% if slide.background_image %}
+      data-background-image="{{ slide.background_image | prepend: '/images/' | prepend: site.baseurl }}"
     {% endif %}
   >
-    <textarea data-template>
+    {{ slide.title }}
+      {% if slide.image %}
+        <div>
+          {% include slides/components/image.html
+          src=slide.image.src
+          width=slide.image.width %}
+        </div>
+      {% endif %}
 
-      {{ slide.title }} <div> {% if slide.image %} {% include slides/components/image.html src=slide.image.src width=slide.image.width %} {% endif %} </div> {{ slide.body }}
-    </textarea>
+    {{ slide.body }}
+
+    {% if slide.contact %}
+      {% include slides/components/contact.html
+        src=slide.image.src
+        width=slide.image.width %}
+    {% endif %}
+
+    <aside class="notes">
+      {{ slide.notes }}
+    </aside>
   </section>
 {% endfor %}
