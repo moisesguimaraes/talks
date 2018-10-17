@@ -11,13 +11,14 @@ layout: slide
     {% endif %}
   >
     {{ slide.title }}
-      {% if slide.image %}
-        <div>
-          {% include slides/components/image.html
-          src=slide.image.src
-          width=slide.image.width %}
-        </div>
-      {% endif %}
+
+    {% if slide.image %}
+      <div>
+        {% include slides/components/image.html
+        src=slide.image.src
+        width=slide.image.width %}
+      </div>
+    {% endif %}
 
     {{ slide.body }}
 
