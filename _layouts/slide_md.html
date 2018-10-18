@@ -24,8 +24,7 @@ layout: slide
 
     {% if slide.contact %}
       {% include slides/components/contact.html
-        src=slide.image.src
-        width=slide.image.width %}
+        qr_code_color=slide.contact.qr_code_color %}
     {% endif %}
 
     <aside class="notes">
