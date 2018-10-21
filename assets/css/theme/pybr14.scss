@@ -1,0 +1,93 @@
+---
+---
+//// Python Brasil Theme
+
+
+//// Default mixins and settings ----------------------------------------- ////
+@import "../../reveal.js/css/theme/template/mixins";
+@import "../../reveal.js/css/theme/template/settings";
+//// --------------------------------------------------------------------- ////
+
+
+//// Include theme-specific fonts
+//// PythonBrasil 14 Headings
+@import url(https://fonts.googleapis.com/css?family=Advent+Pro);
+//// PythonBrasil 14 Text
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+//// Code
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css);
+
+
+//// Override theme settings (see ../template/settings.scss)
+
+//// Background of the presentation
+$backgroundColor: #fff;  // #2b2b2b;
+
+//// Primary/body text
+$mainFont: Nunito, "Helvetica Neue", sans-serif;  // 'Lato', sans-serif;
+// $mainFontSize: 40px;
+$mainColor: #122e45;  // #eee;
+
+//// Vertical spacing between blocks of text
+// $blockMargin: 20px;
+
+//// Headings
+// $headingMargin: 0 0 $blockMargin 0;
+$headingFont: 'Advent Pro', sans-serif;  // 'League Gothic', Impact, sans-serif;
+$headingColor: #122e45;  // #eee;
+// $headingLineHeight: 1.2;
+// $headingLetterSpacing: normal;
+// $headingTextTransform: uppercase;
+// $headingTextShadow: none;
+$headingFontWeight: bolder;  // none
+// $heading1TextShadow: $headingTextShadow;
+
+// $heading1Size: 2.5em;  // 3.77em;
+// $heading2Size: 1.6em;  // 2.11em;
+// $heading3Size: 1.3em;  // 1.55em;
+// $heading4Size: 1.0em;
+
+//// Links and actions
+$linkColor: #82c7ce;
+// $linkColorHover: lighten( $linkColor, 20% );
+
+//// Text selection
+$selectionBackgroundColor: #122e45;
+$selectionColor: #fff;
+
+//// Generates the presentation background, can be overridden
+//// to return a background image or gradient
+// @mixin bodyBackground() {
+//	background: $backgroundColor;
+//}
+
+// Theme template ------------------------------
+@import "../../reveal.js/css/theme/template/theme";
+// ---------------------------------------------
+
+/*********************************************
+ * THEME SPECIFIC
+ *********************************************/
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+.reveal code {
+	font-family: 'Fira Code', monospace;
+	font-size: 1.1em;
+	line-height: 1.3em;
+}
+
+/* fullscreen code element */
+.reveal pre code {
+	width: 100%;
+	height: 100%;
+	max-height: 9999px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 2em;
+}
