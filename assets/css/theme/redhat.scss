@@ -78,14 +78,13 @@ section.has-dark-background {
 	}
 }
 
-.reveal code {
-	font-family: 'Fira Code', monospace;
-	//font-size: 1.1em;
-	//line-height: 1.3em;
-}
-
 /* fullscreen code element */
 .reveal pre {
 	width: 100%;
 	box-shadow: none;
+}
+
+.reveal pre code {
+	font-family: 'Fira Code', monospace;
+	max-height: 1080px;
 }
