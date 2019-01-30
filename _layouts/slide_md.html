@@ -26,6 +26,10 @@ layout: slide
       {% include slides/components/contact.html
         qr_code_color=slide.contact.qr_code_color %}
     {% endif %}
+    {% if slide.contato %}
+      {% include slides/components/contato.html
+        qr_code_color=slide.contato.qr_code_color %}
+    {% endif %}
 
     <aside class="notes">
       {{ slide.notes }}
