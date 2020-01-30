@@ -1,0 +1,90 @@
+---
+---
+//// DevConf.CZ Theme
+
+
+//// Default mixins and settings ----------------------------------------- ////
+@import "../../reveal.js/css/theme/template/mixins";
+@import "../../reveal.js/css/theme/template/settings";
+//// --------------------------------------------------------------------- ////
+
+
+//// Include theme-specific fonts
+//// Headings
+@import url(https://fonts.googleapis.com/css?family=Overpass);
+//// Text
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+//// Code
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css);
+
+
+//// Override theme settings (see ../template/settings.scss)
+
+//// Background of the presentation
+$backgroundColor: #fff;  // #2b2b2b;
+
+//// Primary/body text
+$mainFont: "Open Sans", sans-serif, 'Lato', sans-serif;
+// $mainFontSize: 40px;
+$mainColor: #4c4c4c;  // #eee;
+
+//// Vertical spacing between blocks of text
+// $blockMargin: 20px;
+
+//// Headings
+// $headingMargin: 0 0 $blockMargin 0;
+$headingFont: 'Overpass', 'League Gothic', Impact, sans-serif;
+$headingColor: #000;  // #eee;
+// $headingLineHeight: 1.2;
+// $headingLetterSpacing: normal;
+// $headingTextTransform: uppercase;
+// $headingTextShadow: none;
+$headingFontWeight: bolder;  // none
+// $heading1TextShadow: $headingTextShadow;
+
+// $heading1Size: 2.5em;  // 3.77em;
+// $heading2Size: 1.6em;  // 2.11em;
+// $heading3Size: 1.3em;  // 1.55em;
+// $heading4Size: 1.0em;
+
+//// Links and actions
+$linkColor: #ab1b94;
+// $linkColorHover: lighten( $linkColor, 20% );
+
+//// Text selection
+$selectionBackgroundColor: #ab1b94;
+$selectionColor: #fff;
+
+//// Generates the presentation background, can be overridden
+//// to return a background image or gradient
+// @mixin bodyBackground() {
+//	background: $backgroundColor;
+//}
+
+// Theme template ------------------------------
+@import "../../reveal.js/css/theme/template/theme";
+// ---------------------------------------------
+
+/*********************************************
+ * THEME SPECIFIC
+ *********************************************/
+
+.reveal b {
+	color: #ab1b94; }
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+/* fullscreen code element */
+.reveal pre {
+	width: 100%;
+	box-shadow: none;
+}
+
+.reveal pre code {
+	font-family: 'Fira Code', monospace;
+	max-height: 1080px;
+}
